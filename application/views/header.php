@@ -191,13 +191,17 @@ else
 
             @media screen and (max-width: 1290px) {
                 #header-wrap {
-                    padding: 16px 30px;
+                    padding: 10px 30px;
                 }
             }
 
             @media screen and (max-width: 1200px) {
                 #header-wrap {
-                    padding: 16px 10px;
+                    padding: 0px 0px;
+
+                }
+                #button-support{
+                    margin-top: -60px !important;
                 }
 
                 #header .container {
@@ -317,7 +321,9 @@ else
                 border-radius: 10px;
             }
 
-
+#button-support{
+    margin-top: -25px;
+}
 
         </style>
 
@@ -346,8 +352,8 @@ else
                             $profile_data = $this->common->get_user_details($this->session->userdata('cid'));
                             ?>
                             <div id="logo" style="margin-right: 7px;">
-                                <p class="logo" data-dark-logo="<?= base_url() ?>front_assets/images/Header_Logos_JFS.png" style="margin-top: 12px; cursor: auto">
-                                    <img src="<?= base_url() ?>front_assets/images/Header_Logos_JFS.png" alt="JFS Logo">
+                                <p class="logo" data-dark-logo="<?= base_url() ?>front_assets/images/Header_Logos_JFS.png" style="margin-top: 2px; cursor: auto">
+                                    <img src="<?= base_url() ?>front_assets/images/Header_Logos_JFS.png" alt="JFS Logo" style="width: 110px;height: 100px">
 
                                 </p>
 
@@ -483,8 +489,8 @@ else
                                         <li><a href="<?=base_url().'sessions'?>"class="hoverThemeColour">MAIN EVENT</a></li>
                                     </ul>
                                     <?php }?>
-                                    <ul class="main-menu nav navbar-nav navbar-left " id="">
-                                        <li><a href="https://www.jfssd.org/supportjfs" class="hoverThemeColour"><img src="<?= base_url()?>front_assets/images/Support_JFS_Button.png" style="max-width: 150px;height: 50px; margin-top: -25px"></a></li>
+                                    <ul class="main-menu nav navbar-nav navbar-left " >
+                                        <li><a href="https://www.jfssd.org/supportjfs" class="hoverThemeColour"><img  id="button-support" src="<?= base_url()?>front_assets/images/Support_JFS_Button.png" style="max-width: 150px;height: 50px; "></a></li>
                                     </ul>
                                 </nav>
                             </div>
