@@ -38,6 +38,7 @@
                                             <th>Full Name</th>
                                             <th>Email</th>
                                             <th>Country</th>
+                                            <th>VIP Type</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -59,6 +60,7 @@
                                                     <td><?= $val->first_name . ' ' . $val->last_name ?></td>
                                                     <td><?= $val->email ?></td>
                                                     <td><?= $val->country ?></td>
+                                                    <td><?=(isset($val->vip ) && ( $val->vip == "1"))?'VIP':''?></td>
                                                     <td> 
                                                         <a class="btn btn-danger btn-sm delete_presenter" href="<?= base_url() . 'admin/user/deleteuser/' . $val->cust_id ?>">
                                                             <i class="fa fa-trash-o"></i> Delete
@@ -171,6 +173,7 @@ switch ($msg) {
         });
 
         $('#modal-upload-user').on('click','.upload-users-btn',function(){
+            $('#modal-upload-user').modal('hide');
             if ($('#inputUserFile').get(0).files.length === 0) {
                 toastr.error("Please select a file to load");
                 return false;
@@ -227,7 +230,7 @@ switch ($msg) {
                                     data.msg+'<br>'+'<span><i class="fas fa-check-circle" style="color: green;"></i> '+data.importedUsers+' Users Imported</span><br><span><i class="fas fa-exclamation-triangle" style="color: darkorange;"></i> '+data.updatedUsers+' Existing Users Updated</span>',
                                     'success'
                                 ).then(()=>{
-
+                                   location.reload();
                                 });
                             }else{
                                 $("#inputPresentationsFile").val("");
