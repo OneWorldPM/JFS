@@ -33,6 +33,7 @@ class M_register extends CI_Model {
                     'password' => base64_encode($post['password']),
                     'register_date' => date("Y-m-d h:i")
                 );
+
                 $this->db->insert("customer_master", $set);
                 $cust_id = $this->db->insert_id();
                 if ($cust_id > 0) {
