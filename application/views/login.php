@@ -63,10 +63,10 @@
     <div class="container container-fullscreen" id="home_first_section">
         <div class="text-middle">
             <div class="row">
-                <div class="col-md-6 col-xs-12 col-sm-12 center p-60 background-white" style="border-radius: 10px;">
+                <div class="col-md-5 col-xs-12 col-sm-12 center p-60 background-white" style="border-radius: 10px;">
                     <div class="row" style="background-color: #5C4B8C;border-radius: 5px">
                         <div class="" style=""><img src="<?= base_url() ?>front_assets/images/Event_Banner_01.jpg" style="width:100%;height: 100%;max-width: 800px;max-height: 400px"></div>
-                        <div class="col-md-6 col-xs-12 col-sm-12">
+                        <div class="col-md-12 col-xs-12 col-sm-12">
                             <h4>Welcome!</h4>
                             <p>Sign in Below</p>
                             <?php
@@ -91,10 +91,10 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="col-md-6 col-xs-12 col-sm-12">
-                            <h4>-OR-</h4>
-                            <p class="text-left"><a href="<?= base_url() ?>register">Sign in as a temporary guest</a> </p>
-                        </div>
+<!--                        <div class="col-md-6 col-xs-12 col-sm-12">-->
+<!--                            <h4>-OR-</h4>-->
+<!--                            <p class="text-left"><a href="--><?//= base_url() ?><!--register">Sign in as a temporary guest</a> </p>-->
+<!--                        </div>-->
                     </div>
                 </div>
             </div>
