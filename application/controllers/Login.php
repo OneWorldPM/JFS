@@ -12,9 +12,9 @@ class Login extends CI_Controller {
     }
 
     public function index() {
-       if($this->session->userdata('cid') != ""){
-        $this->session->sess_destroy();
-        redirect('login');
+       if(isset($_SESSION['cid']) && $_SESSION['cid'] != "")
+       {
+        redirect('home');
        }else{
            $this->load->view('header');
            $this->load->view('login');

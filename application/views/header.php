@@ -11,13 +11,13 @@ else
     $themeColour = '674ea0';
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%;">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <link rel="shortcut icon" href="<?= base_url() ?>front_assets/images/favicon.png">
-        <title>Virtual Conference & Trade Show</title>
+        <title>JFS Event</title>
         <!-- Bootstrap Core CSS -->
         <link href="<?= base_url() ?>front_assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="<?= base_url() ?>front_assets/vendor/fontawesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
@@ -283,7 +283,7 @@ else
                 background: #<?=$themeColour?> !important;
             }
             #mainMenu2 ul li a:hover {
-                color: #<?=$themeColour?> !important;
+                color: #ba9cff !important;
             }
             /****** Theme based colours ****/
             .dropdown-backdrop{
@@ -476,21 +476,24 @@ else
                                         <ul class="main-menu nav navbar-nav navbar-right" id="nav-claim-credit">
                                             <li><a href=""  class="hoverThemeColour">AUCTION</a></li>
                                         </ul>
-                                    <ul class="main-menu nav navbar-nav navbar-right" id="nav-claim-credit">
-                                        <li><a href=""  class="hoverThemeColour">HONOREES</a></li>
-                                    </ul>
-                                    <ul class="main-menu nav navbar-nav navbar-right" id="nav-product-theaters">
-                                        <li><a href=""  class="hoverThemeColour">UNDERWRITERS</a></li>
-                                    </ul>
-                                    <ul class="main-menu nav navbar-nav navbar-right" id="nav-sessions">
-                                        <li><a href=""  class="hoverThemeColour">VIP MEET & GREET</a></li>
-                                    </ul>
-                                    <ul class="main-menu nav navbar-nav navbar-right" id="nav-home">
-                                        <li><a href="<?=base_url().'sessions'?>"class="hoverThemeColour">MAIN EVENT</a></li>
-                                    </ul>
+                                        <ul class="main-menu nav navbar-nav navbar-right" id="nav-claim-credit">
+                                            <li><a href=""  class="hoverThemeColour">HONOREES</a></li>
+                                        </ul>
+                                        <ul class="main-menu nav navbar-nav navbar-right" id="nav-product-theaters">
+                                            <li><a href=""  class="hoverThemeColour">UNDERWRITERS</a></li>
+                                        </ul>
+                                        <ul class="main-menu nav navbar-nav navbar-right" id="nav-sessions">
+                                            <li><a href=""  class="hoverThemeColour">VIP MEET & GREET</a></li>
+                                        </ul>
+                                        <ul class="main-menu nav navbar-nav navbar-right" id="nav-home">
+                                            <li><a href="<?=base_url().'sessions'?>"class="hoverThemeColour">MAIN EVENT</a></li>
+                                        </ul>
+                                        <ul class="main-menu nav navbar-nav navbar-right" id="nav-home">
+                                            <li><a href="<?=base_url().'home'?>"class="hoverThemeColour">LOBBY</a></li>
+                                        </ul>
                                     <?php }?>
                                     <ul class="main-menu nav navbar-nav navbar-left " >
-                                        <li><a href="https://www.jfssd.org/supportjfs" class="hoverThemeColour"><img  id="button-support" src="<?= base_url()?>front_assets/images/Support_JFS_Button.png" style="max-width: 150px;height: 50px; "></a></li>
+                                        <li><a href="https://www.jfssd.org/supportjfs" target="_blank" class="hoverThemeColour"><img  id="button-support" src="<?= base_url()?>front_assets/images/Support_JFS_Button.png" style="max-width: 150px;height: 50px; "></a></li>
                                     </ul>
                                 </nav>
                             </div>

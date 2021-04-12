@@ -10,14 +10,13 @@
     }
 
     .box-home {
-        background-color: #444;
         border-radius: 30px;
-        background: rgba(250, 250, 250, 0.8);
-        max-width: 270px;
-        min-width: 270px;
-        min-height: 270px;
-        max-height: 270px;
-        padding: 15px;
+        background-color: rgba(250, 250, 250, 0.8);
+        max-width: 243px;
+        min-width: 243px;
+        min-height: 260px;
+        max-height: 260px;
+        padding: unset;
     }
     .box-home_2 {
         background-color: #444;
@@ -98,7 +97,22 @@
         }
     }
     .box-home{
-        background-color: #674ea0;
+        background-color: #674ea0e0;
+        padding: unset;
+    }
+
+    body{
+        height: 100%;
+    }
+
+    .wrapper{
+        height: 100%;
+    }
+
+    .parallax
+    {
+        padding-top: unset;
+        height: 100%;
     }
 </style>
 
@@ -107,68 +121,79 @@
         <div class="text-middle">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="text-center m-t-0">
-                        <h1 style="color: #674ea0; font-family: 'Architects Daughter', cursive; margin-bottom: 0px; font-weight: 700; font-size: 40px;">Welcome, <?= $this->session->userdata('cname') ?></h1>
-                    </div>
+<!--                    <div class="text-center m-t-0">-->
+<!--                        <h1 style="color: #674ea0; font-family: 'Architects Daughter', cursive; margin-bottom: 0px; font-weight: 700; font-size: 40px;">Welcome, <?//= $this->session->userdata('cname') ?></h1>-->
+<!--                    </div>-->
 <!--                    <div class="col-md-10 col-md-offset-1">
                   <div class="jumbotron" style="background-image: url(<?/*=base_url()*/?>front_assets/images/Header_Logos_JFS.png);height:300px; background-repeat: no-repeat;   background-size: contain;"></div>
                     </div>-->
-                <div class="row justify-content-center " style="text-align: -webkit-center;">
-                    <div class="col-md-2 col-sm-12 col-md-offset-2">
-                        <div style="text-align: center !important;">
-                        <a class="" href="<?= base_url() ?>sessions">
-                            <div class="col-lg box-home ml-5 mr-5 p-5 text-center" >
-                                <img src="<?= base_url() ?>front_assets/images/Session.png" alt="welcome" class="m-t-40 " style="height: 150px; width: 160px; ">
-                                <br>
-                                <br>
-                                <span>SESSIONS</span>
-                            </div>
-                        </a>
+                    
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <img src="<?=base_url()?>front_assets/images/event_banner_2.png">
                         </div>
-                    </div> 
-                     <div class="col-md-2 col-sm-12  col-md-offset-1" >
-                        <a class="" href="<?= base_url().'productTheaters'?>"">
-                         <div class="col-lg box-home ml-5 mr-5 p-5 text-center">
-                                <span class="fa fa-desktop"  style="font-size: 135px !important; color: #22A5DA; margin-top:50px;"></span>
+                    </div>
+
+                    <div class="row justify-content-center " style="text-align: -webkit-center;">
+
+                        <div class="col-md-2 col-sm-12 col-md-offset-1">
+                            <div style="text-align: center !important;">
+                                <a class="" href="<?= base_url() ?>sessions">
+                                    <div class="col-lg box-home ml-5 mr-5 p-5 text-center" >
+                                        <span class="fas fa-chalkboard-teacher"  style="font-size: 135px !important; margin-top:50px;"></span>
+                                        <br>
+                                        <br>
+                                        <span>Main Event</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-12">
+                            <a class="" href="<?= base_url().'productTheaters'?>"">
+                            <div class="col-lg box-home ml-5 mr-5 p-5 text-center">
+                                <span class="fa fa-desktop"  style="font-size: 135px !important; margin-top:50px;"></span>
                                 <br>
                                 <br>
                                 <span>Underwriters</span>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="col-md-2 col-sm-12  col-md-offset-1">
-                        <a class="" href="<?= base_url().'claimCredit'?>">
-                            <div class="col-lg box-home ml-5 mr-5 p-5 text-center">
-                                <span class="fa fa-trophy"  style="font-size: 135px !important; color: #22A5DA; margin-top:50px;"></span>
-                                <br>
-                                <br>
-                                <span>Honorees</span>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
+
+                        <div class="col-md-2 col-sm-12">
+                            <a class="" href="<?= base_url().'claimCredit'?>">
+                                <div class="col-lg box-home ml-5 mr-5 p-5 text-center">
+                                    <span class="fa fa-trophy"  style="font-size: 135px !important; margin-top:50px;"></span>
+                                    <br>
+                                    <br>
+                                    <span>Honorees</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-2 col-sm-12">
+                            <a class="" href="<?= base_url().'claimCredit'?>">
+                                <div class="col-lg box-home ml-5 mr-5 p-5 text-center">
+                                    <span class="fa fa-handshake"  style="font-size: 135px !important; margin-top:50px;"></span>
+                                    <br>
+                                    <br>
+                                    <span>VIP Meet and Greet</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-2  col-sm-12">
+                            <a class="" href="<?= base_url().'claimCredit'?>">
+                                <div class="col-lg box-home ml-5 mr-5 p-5 text-center ">
+                                    <span class="fa fa-gavel"  style="font-size: 135px !important; margin-top:50px;"></span>
+                                    <br>
+                                    <br>
+                                    <span>Auction</span>
+                                </div>
+                            </a>
+                        </div>
+
                     </div>
-                    <div class="row justify-content-center " style="text-align: -webkit-center;">
-                    <div class="col-md-2 col-sm-12  col-md-offset-3" >
-                        <a class="" href="<?= base_url().'claimCredit'?>">
-                            <div class="col-lg box-home ml-5 mr-5 p-5 text-center">
-                                <span class="fa fa-handshake"  style="font-size: 135px !important; color: #22A5DA; margin-top:50px;"></span>
-                                <br>
-                                <br>
-                                <span>VIP Meet and Greet</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-2  col-sm-12 col-md-offset-2" >
-                        <a class="" href="<?= base_url().'claimCredit'?>">
-                            <div class="col-lg box-home ml-5 mr-5 p-5 text-center ">
-                                <span class="fa fa-gavel"  style="font-size: 135px !important; color: #22A5DA; margin-top:50px;"></span>
-                                <br>
-                                <br>
-                                <span>Auction</span>
-                            </div>
-                        </a>
-                    </div>
-                    </div>
-                </div>
             </div> 
         </div>
     </div>
