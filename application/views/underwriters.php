@@ -50,7 +50,7 @@
                 <div class="col-md-10">
                     <div class="row">
                         <div class="col-md-3 col-md-offset-1 ">
-                            <div style="color: #FFFFFF;background-color: rgba(1,0,7, 0.5);width: 350px;height: 500px">
+                            <div style="color: #FFFFFF; background-color: rgba(1,0,7, 0.5);width: 350px;height: 500px">
                                 <div class="text line-space-1" >
                                     <b> <h4>COUTURE</h4></b>
                                     Charitable Adult Rides & Services, Inc.<br>
@@ -86,7 +86,8 @@
                             </div>
                         </div>
                         <div class="col-md-4 col-md-offset-1">
-                            <div style="color: #FFFFFF;background-color: white;width: 380px;height: 500px">
+                            <div style="color: #FFFFFF;background-color: white;width: 380px;height: 500px; margin-top: 10px">
+                                <div>
                                     <a href="https://careasy.org/home"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/CARS_Logo_Full_Horz_CMYK-01.jpg" class="logos"></a>
                                     <a href="https://www.century21.com/real-estate-agent/profile/caryl-lees-witte-P10304096"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/CLW.jpg" class="logos"></a>
                                     <a href="https://capitalcityautoauction.com/"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/Capital City Auto Auction logo - color.pdf.jpg" class="logos"></a>
@@ -99,6 +100,8 @@
                                     <a href="https://www.pathfinderfunds.com/"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/pathfinder-logo-tagline (1).jpg" class="logos"></a>
                                     <a href="https://www.seacrestvillage.org/"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/SFlogo2016.jpg" class="logos"></a>
                                     <a href="https://www.seacrestvillage.org/"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/SVRClogo_purple_19.jpg" class="logos"></a>
+
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-3 col-md-offset-0" style="margin-right: ">
