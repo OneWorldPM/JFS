@@ -65,7 +65,7 @@
             <div class="row">
                 <div class="col-md-5 col-xs-12 col-sm-12 center p-60 background-white" style="border-radius: 10px;">
                     <div class="row" style="background-color: #5C4B8C;border-radius: 5px">
-                        <div class="" style=""><img src="<?= base_url() ?>front_assets/images/Event_Banner_01.jpg" style="width:100%;height: 100%;max-width: 800px;max-height: 400px"></div>
+                        <div class="" style=""><img src="<?= base_url() ?>front_assets/images/Event_Banner_01.png" style="width:100%;height: 100%;max-width: 800px;max-height: 400px"></div>
                         <div class="col-md-12 col-xs-12 col-sm-12">
                             <h4>Welcome!</h4>
                             <p>Sign in Below</p>
