@@ -156,7 +156,7 @@
                         </div>
 
                         <div class="col-md-2 col-sm-12">
-                            <a class="" href="<?= base_url().'productTheaters'?>"">
+                            <a class="" href="<?= base_url().'underwriters'?>"">
                             <div class="col-lg box-home ml-5 mr-5 p-5 text-center">
                                 <span class="fa fa-desktop"  style="font-size: 135px !important; margin-top:50px;"></span>
                                 <br>
