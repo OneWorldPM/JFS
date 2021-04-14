@@ -109,16 +109,17 @@
                                 <?php
                                 if (isset($all_sessions) && !empty($all_sessions)) {
                                     foreach ($all_sessions as $val) {
+
                                         ?>
                                         <div class="post-item">
                                             <div class="post-image col-md-3 m-t-20"> 
-                                                <a href="<?= base_url() ?>sessions/attend/<?= $val->sessions_id ?>"> <?php if ($val->sessions_photo != "") { ?> <img alt="" src="<?= base_url() ?>uploads/sessions/<?= $val->sessions_photo ?>"> <?php } else { ?>  <img alt="" src="<?= base_url() ?>front_assets/images/session_avtar.jpg"> <?php } ?>  </a> 
+                                                <a href="<?= base_url() ?>sessions/attend/<?= $val->sessions_id ?>" id="session-attend" data-vip_session="<?=$val->vip_session?>"> <?php if ($val->sessions_photo != "") { ?> <img alt="" src="<?= base_url() ?>uploads/sessions/<?= $val->sessions_photo ?>"> <?php } else { ?>  <img alt="" src="<?= base_url() ?>front_assets/images/session_avtar.jpg"> <?php } ?>  </a>
                                             </div>
                                             <div class="post-content-details col-md-9 m-t-30">
 
                                                 <div class="post-title">
                                                     <h6 style="font-weight: 600"><?= $val->sessions_date . ' ' . date("h:i A", strtotime($val->time_slot)) . ' - ' . date("h:i A", strtotime($val->end_time)) ?> PT </h6>
-                                                    <h3><a href="<?= base_url() ?>sessions/attend/<?= $val->sessions_id ?>" style="color: #0077cc; font-weight: 900;"><?= $val->session_title ?></a></h3>
+                                                    <h3><a href="<?= base_url() ?>sessions/attend/<?= $val->sessions_id ?>" id="session-attend" data-vip_session="<?=$val->vip_session?>" style="color: #0077cc; font-weight: 900;"><?= $val->session_title ?></a></h3>
                                                 </div>
                                                 <?php
                                                 if (isset($val->presenter) && !empty($val->presenter)) {
@@ -132,7 +133,7 @@
                                                 ?>
                                                 <div class="post-description">
                                                     <p style="margin-bottom: 10px;"><?= $val->sessions_description ?></p>
-                                                    <a class="button button-3d rounded right" style="margin: 0px 0;background-color: #674ea0" href="<?= base_url() ?>sessions/attend/<?= $val->sessions_id ?>"><span>Attend</span></a>
+                                                    <a id="session-attend" class="button button-3d rounded right" style="margin: 0px 0;background-color: #674ea0" href="<?= base_url() ?>sessions/attend/<?= $val->sessions_id ?>"><span>Attend</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -194,6 +195,7 @@
         </div>
     </div>
 </div>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         $('#social_link_div').addClass('hidden');
@@ -266,5 +268,27 @@
 
         $('#toolbox').hide();
 
+
+        $('.post-content').on('click','#session-attend',function(e){
+            e.preventDefault();
+            var session_vip = $(this).attr('data-vip_session');
+            var vip_type="<?=$this->session->userdata('vipType')?>";
+
+            console.log(session_vip);
+            console.log(vip_type);
+            if(session_vip=="1" && vip_type=="0"){
+                Swal.fire('');
+                Swal.fire({
+                    icon: 'info',
+                    title: 'Notification',
+                    text: 'This is reserved for VIP Members only',
+
+                })
+
+            }else{
+                location.href = $(this).attr('href');
+            }
+
+        });
     });
 </script>

@@ -329,7 +329,8 @@ class M_sessions extends CI_Model {
             'session_notes'=>$post['session_notes'],
             'subsequent_session_1'=>(trim($post['subsequent_session_1']) == 'null')?null:trim($post['subsequent_session_1']),
             'subsequent_session_2'=>(trim($post['subsequent_session_2']) == 'null')?null:trim($post['subsequent_session_2']),
-            'subsequent_session_popup_text'=>trim($post['subsequent_session_popup_text'])
+            'subsequent_session_popup_text'=>trim($post['subsequent_session_popup_text']),
+            'vip_session'=>(isset($post['vip_session']))?$post['vip_session']:'',
             
         );
         $this->db->insert("sessions", $set);
@@ -520,7 +521,8 @@ class M_sessions extends CI_Model {
             'session_notes'=>$post['session_notes'],
             'subsequent_session_1'=>(trim($post['subsequent_session_1']) == 'null')?null:trim($post['subsequent_session_1']),
             'subsequent_session_2'=>(trim($post['subsequent_session_2']) == 'null')?null:trim($post['subsequent_session_2']),
-            'subsequent_session_popup_text'=>trim($post['subsequent_session_popup_text'])
+            'subsequent_session_popup_text'=>trim($post['subsequent_session_popup_text']),
+            'vip_session'=>(isset($post['vip_session']))?$post['vip_session']:'',
 
         );
         $this->db->update("sessions", $set, array("sessions_id" => $post['sessions_id']));

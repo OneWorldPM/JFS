@@ -63,6 +63,9 @@ class Sessions extends CI_Controller {
 
         $sesions = $this->objsessions->viewSessionsData($sessions_id);
 
+        if($sesions->vip_session=="1" && ($this->session->userdata('vipType')=="0")){
+            header("location:" . base_url() . 'home');
+        }
         if (date("Y-m-d H:i:s") > date("Y-m-d H:i:s", strtotime($sesions->sessions_date . ' ' . $sesions->end_time)) && $sessions_id != 25) {
             header("location:" . base_url() . "sessions/session_end/$sessions_id");
             die();

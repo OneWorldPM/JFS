@@ -41,6 +41,10 @@ $user_role = $this->session->userdata('role');
                                         <input type="text" name="session_title" id="session_title" value="<?= (isset($sessions_edit) && !empty($sessions_edit) ) ? $sessions_edit->session_title : "" ?>" class="form-control">
                                     </div>
                                     <div class="form-group">
+                                        <label class="text-large text-bold">VIP Session</label><span class="badge badge-success"> new </span>
+                                        <input type="checkbox" name="vip_session" id="vip_session" value="1" class="form-inline" <?= (isset($sessions_edit) && !empty($sessions_edit) && $sessions_edit->vip_session=="1") ?"checked": "" ?>><small style="color:red"> <==== Check if SESSION is for VIP </small>
+                                    </div>
+                                    <div class="form-group">
                                         <label class="text-large text-bold">Sessions Description</label>
                                         <textarea class="form-control" style="color: #000;" name="sessions_description" id="sessions_description"><?= (isset($sessions_edit) && !empty($sessions_edit) ) ? $sessions_edit->sessions_description : "" ?></textarea>
                                     </div>
@@ -181,6 +185,7 @@ $user_role = $this->session->userdata('role');
                                             Redirect On Button Click <span class="badge badge-success">new</span>
                                             <br><small style="color: red;font-size: 12px;">Regardless the session is over or not, this feature will redirect the user on a button click.</small>
                                             <br><small style="color: red;font-size: 12px;">This will have no effect unless configured before attendees loading their page.</small>
+                                            <br><small style="color: red;font-size: 12px;">IF the session is for VIP the VIP will redirect the sessions but the NON-VIP will redirect to the lobby</small>
                                         </label>
                                         <div class="col-md-12">
                                             <div class="form-group">

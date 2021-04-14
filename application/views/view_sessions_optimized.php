@@ -452,6 +452,8 @@ if (isset($sessions)) {
     var subsequent_session_2_name = "<?=$sessions->subsequent_session_2_name?>";
     var subsequent_session_popup_text = "<?=$sessions->subsequent_session_popup_text?>";
 
+    var vip_type = "<?=$this->session->userdata('vipType')?>";
+
 </script>
 <?= getSocketScript()?>
 <script src="<?= base_url() ?>front_assets/js/custom-fullscreen.js"></script>
