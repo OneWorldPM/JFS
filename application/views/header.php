@@ -480,7 +480,7 @@ else
                                             <li><a href=""  class="hoverThemeColour">HONOREES</a></li>
                                         </ul>
                                         <ul class="main-menu nav navbar-nav navbar-right" id="nav-product-theaters">
-                                            <li><a href=""  class="hoverThemeColour">UNDERWRITERS</a></li>
+                                            <li><a href="<?=base_url().'underwriters'?>"  class="hoverThemeColour">UNDERWRITERS</a></li>
                                         </ul>
                                         <ul class="main-menu nav navbar-nav navbar-right" id="nav-sessions">
                                             <li><a href=""  class="hoverThemeColour">VIP MEET & GREET</a></li>
