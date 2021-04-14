@@ -119,7 +119,7 @@
 
                     </div>
                     <small style="color: red;">Only .xlsx or .xls  file are allowed.</small><br>
-                    <small style="color: red;">If the email is existing this will automatically update the users information</small>
+                    <p style="color: red;">If the email is existing this will automatically update the users information</p>
                 </form>
             </div>
             <div class="modal-footer">
@@ -190,7 +190,9 @@ switch ($msg) {
 
             Swal.fire({
                 title: 'Are you sure?',
-                text: "You are about to load \""+fileName+"\"",
+                text: "You are about to load \""+fileName+"\"" +
+                "This will update user information with existing email"+
+                "You wont be able to revert this action",
                 icon: 'warning',
                 showCancelButton: true,
                 confirmButtonColor: '#3085d6',
