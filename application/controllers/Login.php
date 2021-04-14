@@ -37,6 +37,7 @@ class Login extends CI_Controller {
             );
             $data = $this->objlogin->user_login($username,base64_encode($password));
             if ($data) {
+
                 $token = $this->objlogin->update_user_token($data['cust_id']);
                 $session = array(
                     'cid' => $data['cust_id'],
@@ -44,8 +45,10 @@ class Login extends CI_Controller {
                     'fullname' => $data['first_name'] . ' ' . $data['last_name'],
                     'email' => $data['email'],
                     'token' => $token,
-                    'userType' => 'user'
+                    'userType' => 'user',
+                    'vipType'=>$data['vip'],
                 );
+
                 $this->session->set_userdata($session);
                 redirect('home');
             } else {
