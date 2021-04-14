@@ -12,6 +12,9 @@
     .box-home {
         border-radius: 30px;
         background-color: rgba(250, 250, 250, 0.8);
+        border-color: #FFFFFF !important;
+        border-width: 3pt !important;
+        border-style: solid;
         max-width: 243px;
         min-width: 243px;
         min-height: 260px;
@@ -114,6 +117,9 @@
         padding-top: unset;
         height: 100%;
     }
+    h3{
+        color: #FFFFFF;
+    }
 </style>
 
 <section class="parallax" style="background-image: url(<?= base_url() ?>front_assets/images/Site_Background_02_Welcome_Lobby.jpg);">
@@ -143,7 +149,7 @@
                                         <span class="fas fa-chalkboard-teacher"  style="font-size: 135px !important; margin-top:50px;"></span>
                                         <br>
                                         <br>
-                                        <span>Main Event</span>
+                                        <span><h3>Main Event</h3></span>
                                     </div>
                                 </a>
                             </div>
@@ -155,7 +161,7 @@
                                 <span class="fa fa-desktop"  style="font-size: 135px !important; margin-top:50px;"></span>
                                 <br>
                                 <br>
-                                <span>Underwriters</span>
+                                <span><h3>Underwriters</h3></span>
                             </div>
                             </a>
                         </div>
@@ -166,7 +172,7 @@
                                     <span class="fa fa-trophy"  style="font-size: 135px !important; margin-top:50px;"></span>
                                     <br>
                                     <br>
-                                    <span>Honorees</span>
+                                    <span><h3>Honorees</h3></span>
                                 </div>
                             </a>
                         </div>
@@ -177,7 +183,7 @@
                                     <span class="fa fa-handshake"  style="font-size: 135px !important; margin-top:50px;"></span>
                                     <br>
                                     <br>
-                                    <span>VIP Meet and Greet</span>
+                                    <span><h3>VIP Meet and Greet</h3></span>
                                 </div>
                             </a>
                         </div>
@@ -188,7 +194,7 @@
                                     <span class="fa fa-gavel"  style="font-size: 135px !important; margin-top:50px;"></span>
                                     <br>
                                     <br>
-                                    <span>Auction</span>
+                                    <span><h3>Auction</h3></span>
                                 </div>
                             </a>
                         </div>
