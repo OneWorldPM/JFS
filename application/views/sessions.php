@@ -16,7 +16,9 @@
     section{
         padding: 25px 0px;
     }
-
+    .link{
+        color: #674ea0 !important; ;
+    }
     .icon-home {
         color: #674ea0;
         font-size: 1.5em;
@@ -73,7 +75,7 @@
                         foreach ($all_sessions_week as $val) {
                             ?>
                             <div class="col-md-4 col-sm-12" style="margin-bottom:30px;">
-                                <a class="icon-home" href="<?= base_url() ?>sessions/getsessions_data/<?= $val->sessions_date ?>"> 
+                                <a class="icon-home link" href="<?= base_url() ?>sessions/getsessions_data/<?= $val->sessions_date ?>">
                                     <?php
                                     $current_date = $this->uri->segment(3);
                                     if ($current_date == "") {
@@ -119,7 +121,7 @@
 
                                                 <div class="post-title">
                                                     <h6 style="font-weight: 600"><?= $val->sessions_date . ' ' . date("h:i A", strtotime($val->time_slot)) . ' - ' . date("h:i A", strtotime($val->end_time)) ?> PT </h6>
-                                                    <h3><a href="<?= base_url() ?>sessions/attend/<?= $val->sessions_id ?>" id="session-attend" data-vip_session="<?=$val->vip_session?>" style="color: #0077cc; font-weight: 900;"><?= $val->session_title ?></a></h3>
+                                                    <h3><a href="<?= base_url() ?>sessions/attend/<?= $val->sessions_id ?>" id="session-attend" data-vip_session="<?=$val->vip_session?>" style="color: #674ea0 !important; font-weight: 900;"><?= $val->session_title ?></a></h3>
                                                 </div>
                                                 <?php
                                                 if (isset($val->presenter) && !empty($val->presenter)) {
