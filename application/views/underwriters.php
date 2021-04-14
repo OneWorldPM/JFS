@@ -1,19 +1,33 @@
 <style>
     body{
-
+        margin-top: -50px;
         background-size: cover;
     }
     h4{
         color:white;
     }
+    h2{
+        color: white;
+    }
+    .head-text{
+
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 40px;
+        font-style: ;
+        font-weight: 900 !important;
+        text-transform: uppercase;
+    }
     .text{
+        line-height: 1;
         margin-top: 10px;
         margin-bottom: 10px;
         margin-right: 10px;
         margin-left: 10px;
     }
     .logos{
-        margin-top: 30px;
+        margin-top: 10px;
         margin-bottom: 10px;
         margin-right: 10px;
         margin-left: 30px;
@@ -25,9 +39,12 @@
 <section class="parallax" style="background-image: url(<?= base_url() ?>front_assets/images/underwriters/Site_Background_04_Underwriters.jpg);">
     <div class="container container-fullscreen" id="home_first_section">
         <div class="text-middle">
+            <div class="head-text">
+                THANK YOU TO OUR GENEROUS UNDERWRITERS
+            </div><br>
             <div class="row">
-                <div class="col-md-3 col-md-offset-0">
-                    <div style="color: #FFFFFF;background-color: rgba(1,0,7, 0.5);width: 400px;height:800px">
+                <div class="col-md-3 ">
+                    <div style="color: #FFFFFF;background-color: rgba(1,0,7, 0.5);width: 350px;height: 500px">
                         <div class="text" >
                         <b> <h4>COUTURE</h4></b>
                     Charitable Adult Rides & Services, Inc.<br>
@@ -62,8 +79,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-md-offset-1">
-                    <div style="color: #FFFFFF;background-color: white;width: 450px;height:800px">
+                <div class="col-md-4 ">
+                    <div style="color: #FFFFFF;background-color: white;width: 580px;height: 500px">
                         <div >
                             <a href="https://careasy.org/home"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/CARS_Logo_Full_Horz_CMYK-01.jpg" class="logos"></a>
                             <a href="https://www.century21.com/real-estate-agent/profile/caryl-lees-witte-P10304096"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/CLW.jpg" class="logos"></a>
@@ -81,8 +98,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-md-offset-0" style="margin-right: ">
-                    <div style="color: #FFFFFF;background-color: rgba(1,0,7, 0.5);width: 400px;height:800px">
+                <div class="col-md-3 col-md-offset-1" style="margin-right: ">
+                    <div style="color: #FFFFFF;background-color: rgba(1,0,7, 0.5);width: 400px;height: 500px">
                         <div class="text">
                     <b><h4>VINTAGE</h4></b><br>
                     Nancy Beck | Century 21 Award<br>
