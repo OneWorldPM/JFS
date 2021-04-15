@@ -486,7 +486,7 @@ else
                                             <li><a href=""  class="hoverThemeColour">VIP MEET & GREET</a></li>
                                         </ul>
                                         <ul class="main-menu nav navbar-nav navbar-right" id="nav-home">
-                                            <li><a href="<?=base_url().'sessions'?>"class="hoverThemeColour">MAIN EVENT</a></li>
+                                            <li><a href="<?=base_url().'sessions/attend'?>"class="hoverThemeColour">MAIN EVENT</a></li>
                                         </ul>
                                         <ul class="main-menu nav navbar-nav navbar-right" id="nav-home">
                                             <li><a href="<?=base_url().'home'?>"class="hoverThemeColour">LOBBY</a></li>
