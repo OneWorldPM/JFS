@@ -441,7 +441,7 @@ else
                                             <li><a href="<?=base_url().'underwriters'?>"  class="hoverThemeColour">UNDERWRITERS</a></li>
                                         </ul>
                                         <ul class="main-menu nav navbar-nav navbar-right" id="nav-sessions">
-                                            <li><a href="<?= base_url().'sessions/attend_vip_meet'?>" target="_blank"  class="hoverThemeColour" id="vip-meet-greet">VIP MEET & GREET</a></li>
+                                            <li><a href="<?= base_url().'sessions/attend_vip_meet'?>"  class="hoverThemeColour" id="vip-meet-greet">VIP MEET & GREET</a></li>
                                         </ul>
                                         <ul class="main-menu nav navbar-nav navbar-right" id="nav-home">
                                             <li><a href="<?=base_url().'sessions/attend'?>"class="hoverThemeColour">MAIN EVENT</a></li>
@@ -464,20 +464,20 @@ else
             <!-- END: HEADER -->
             <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script>
-    $('#vip-meet-greet').on('click',function(e){
-        e.preventDefault();
-        var vip_type="<?=$this->session->userdata('vipType')?>";
-
-        console.log(vip_type);
-        if(vip_type=="0"){
-            Swal.fire({
-                icon: 'info',
-                title: 'Notification',
-                text: 'This Meet & Greet is for VIPs only',
-            })
-        }else{
-            location.href = $(this).attr('href');
-        }
-
+    $(document).ready(function(){
+        $('#vip-meet-greet').on('click',function(e){
+            e.preventDefault();
+            var vip_type="<?=$this->session->userdata('vipType')?>";
+            if(vip_type=="0"){
+                Swal.fire({
+                    icon: 'info',
+                    title: 'Notification',
+                    text: 'This Meet & Greet is for VIPs only',
+                })
+            }else{
+                window.open($(this).attr('href'),"_blank");
+            }
+        });
     });
+
 </script>

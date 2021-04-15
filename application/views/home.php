@@ -178,7 +178,7 @@
                         </div>
 
                         <div class="col-md-2 col-sm-12">
-                            <a class="" href="<?= base_url().'sessions/attend_vip_meet'?>" target="_blank">
+                            <a class="" href="<?= base_url().'sessions/attend_vip_meet'?>" id="vip-meet-greet-icon">
                                 <div class="col-lg box-home ml-5 mr-5 p-5 text-center">
                                     <span class="fa fa-handshake"  style="font-size: 135px !important; margin-top:50px;"></span>
                                     <br>
@@ -205,6 +205,7 @@
     </div>
 </div>
 </section>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         var page_link = $(location).attr('href');
@@ -221,4 +222,21 @@
 
         $('#toolbox').hide();
     });
+
+    $(document).ready(function(){
+        $('#vip-meet-greet-icon').on('click',function(e){
+            e.preventDefault();
+            var vip_type="<?=$this->session->userdata('vipType')?>";
+            if(vip_type=="0"){
+                Swal.fire({
+                    icon: 'info',
+                    title: 'Notification',
+                    text: 'This Meet & Greet is for VIPs only',
+                })
+            }else{
+                window.open($(this).attr('href'),"_blank");
+            }
+        });
+    });
+
 </script>
