@@ -39,6 +39,10 @@
         max-height:120px;
         display: inline;
     }
+    .parallax{
+        height:auto!important;
+        padding-bottom: 20%;
+    }
 </style>
 <section class="parallax" style="background-image: url(<?= base_url() ?>front_assets/images/underwriters/Site_Background_04_Underwriters.jpg);">
     <div class="container container-fullscreen" id="home_first_section">
