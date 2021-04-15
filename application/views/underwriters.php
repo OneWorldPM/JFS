@@ -92,18 +92,18 @@
                         <div class="col-md-4 col-md-offset-1">
                             <div style="color: #FFFFFF;background-color: white;width: 380px;height: 500px; margin-top: 10px">
                                 <div>
-                                    <a href="https://careasy.org/home"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/CARS_Logo_Full_Horz_CMYK-01.jpg" class="logos"></a>
-                                    <a href="https://www.century21.com/real-estate-agent/profile/caryl-lees-witte-P10304096"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/CLW.jpg" class="logos"></a>
-                                    <a href="https://capitalcityautoauction.com/"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/Capital City Auto Auction logo - color.pdf.jpg" class="logos"></a>
-                                    <a href="https://www.cnb.com/"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/CNB-RBC Integrated Logo_RGB.jpg" class="logos"></a>
-                                    <a href="https://www.pacificsothebysrealty.com/agent/621-a-2492-4030139/liz-coden"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/Liz Coden.jpg" class="logos"></a>
-                                    <a href="https://www.lourdmurray.com/"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/LM Delphi Stacked Grey Navy.jpg" class="logos"></a>
-                                    <a href="https://www.century21.com/real-estate-agent/profile/nancy-beck-P25127112"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/NancyBeck_bannerhighresolution.jpg" class="logos"></a>
-                                    <a href=""><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/MollysAngel.jpg" class="logos"></a>
-                                    <a href="https://centurawealth.com/"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/CenturaWealthAdvisoryLogo_ontransparentbackground.png" class="logos"></a>
-                                    <a href="https://www.pathfinderfunds.com/"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/pathfinder-logo-tagline (1).jpg" class="logos"></a>
-                                    <a href="https://www.seacrestvillage.org/"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/SFlogo2016.jpg" class="logos"></a>
-                                    <a href="https://www.seacrestvillage.org/"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/SVRClogo_purple_19.jpg" class="logos"></a>
+                                    <a href="https://careasy.org/home" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/CARS_Logo_Full_Horz_CMYK-01.jpg" class="logos"></a>
+                                    <a href="https://www.century21.com/real-estate-agent/profile/caryl-lees-witte-P10304096" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/CLW.jpg" class="logos"></a>
+                                    <a href="https://capitalcityautoauction.com/" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/Capital City Auto Auction logo - color.pdf.jpg" class="logos"></a>
+                                    <a href="https://www.cnb.com/" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/CNB-RBC Integrated Logo_RGB.jpg" class="logos"></a>
+                                    <a href="https://www.pacificsothebysrealty.com/agent/621-a-2492-4030139/liz-coden" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/Liz Coden.jpg" class="logos"></a>
+                                    <a href="https://www.lourdmurray.com/" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/LM Delphi Stacked Grey Navy.jpg" class="logos"></a>
+                                    <a href="https://www.century21.com/real-estate-agent/profile/nancy-beck-P25127112" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/NancyBeck_bannerhighresolution.jpg" class="logos"></a>
+                                    <a href="" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/MollysAngel.jpg" class="logos"></a>
+                                    <a href="https://centurawealth.com/" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/CenturaWealthAdvisoryLogo_ontransparentbackground.png" class="logos"></a>
+                                    <a href="https://www.pathfinderfunds.com/" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/pathfinder-logo-tagline (1).jpg" class="logos"></a>
+                                    <a href="https://www.seacrestvillage.org/" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/SFlogo2016.jpg" class="logos"></a>
+                                    <a href="https://www.seacrestvillage.org/" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/SVRClogo_purple_19.jpg" class="logos"></a>
 
                                 </div>
                             </div>
