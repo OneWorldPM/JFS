@@ -331,6 +331,8 @@ class M_sessions extends CI_Model {
             'subsequent_session_2'=>(trim($post['subsequent_session_2']) == 'null')?null:trim($post['subsequent_session_2']),
             'subsequent_session_popup_text'=>trim($post['subsequent_session_popup_text']),
             'vip_session'=>(isset($post['vip_session']))?$post['vip_session']:'',
+            'zoom_redirect' => trim($post['zoom_redirect']),
+            'zoom_redirect_url' => trim($post['zoom_redirect_url']),
             
         );
         $this->db->insert("sessions", $set);
@@ -523,6 +525,8 @@ class M_sessions extends CI_Model {
             'subsequent_session_2'=>(trim($post['subsequent_session_2']) == 'null')?null:trim($post['subsequent_session_2']),
             'subsequent_session_popup_text'=>trim($post['subsequent_session_popup_text']),
             'vip_session'=>(isset($post['vip_session']))?$post['vip_session']:'',
+            'zoom_redirect' => trim($post['zoom_redirect']),
+            'zoom_redirect_url' => trim($post['zoom_redirect_url']),
 
         );
         $this->db->update("sessions", $set, array("sessions_id" => $post['sessions_id']));

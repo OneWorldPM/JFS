@@ -12,7 +12,16 @@ socket.on('reload-attendee-signal', function (app_name_to_relaod) {
 socket.on('subsequent-session-redirect-signal', function (app_name_to_reload) {
     if (app_name_to_reload == app_name)
     {
-        fireSubsequentRedirection();
+        if(zoom_redirect!=="0"){
+            if(vip_type=="0"){
+                window.open(base_url+'home', "_self");
+                return false;
+            }
+            window.open(zoom_redirect_url, "_self");
+            return false;
+        }else{
+            fireSubsequentRedirection();
+        }
     }
 });
 

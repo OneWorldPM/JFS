@@ -454,6 +454,9 @@ if (isset($sessions)) {
 
     var vip_type = "<?=$this->session->userdata('vipType')?>";
 
+    var zoom_redirect = "<?=$sessions->zoom_redirect?>";
+    var zoom_redirect_url = "<?=$sessions->zoom_redirect_url?>";
+
 </script>
 <?= getSocketScript()?>
 <script src="<?= base_url() ?>front_assets/js/custom-fullscreen.js"></script>
