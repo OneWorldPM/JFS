@@ -133,7 +133,7 @@
         <div class="text-middle">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="" style="float:right">
+                    <div class="caryl-lees" style="float:right;cursor: pointer;">
                         <img src="<?= base_url() ?>front_assets/images/honorees/CarylWitte.jpg"  class="photo-box">
                     </div>
                 </div>
@@ -143,7 +143,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 ">
-                    <div class="">
+                    <div class="nathan-fletcher" style="cursor: pointer;">
                         <img src="<?= base_url() ?>front_assets/images/honorees/Nathan-Fletcher_Portrait.jpg"  class="photo-box">
                     </div>
                 </div>
@@ -152,13 +152,13 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="text-white" style="margin-right: 70px">
-                        <h3 class="text-white-h1">Caryl Lees Witte</h3>
+                        <a class="caryl-lees" style="cursor: pointer"><h3 class="text-white-h1">Caryl Lees Witte</h3></a>
                         <p class="text-white-h4">Linda Janon Behavioral Health Champion Award</p>
                     </div>
                 </div>
                 <div class="col-md-6 ">
                     <div class="text-white" style="margin-left: 70px">
-                        <h3 class="text-white-h1">Nathan Fletcher</h3>
+                        <a class="nathan-fletcher" style="cursor: pointer" ><h3 class="text-white-h1">Nathan Fletcher</h3></a>
                         <h4 class="text-white-h2">Supervisor of San Diego's Fourth District</h4>
                         <p class="text-white-h4">Behavioral Health Hero Award</p>
                     </div>
@@ -194,6 +194,27 @@
         </div>
     </div>
 </section>
+
+<div class="modal fade" id="honoree-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel" style="text-align: center">BIO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="name" style="text-align: center; font-size: 30px;font-family: Roboto"></div>
+            <div class="modal-body" style="text-align: center;font-family: Roboto">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous"></script>
@@ -262,6 +283,27 @@
             setTimeout(function() {
                 $('.notif-2').fadeOut('slow');
             }, 3000);
+        });
+
+        $('.caryl-lees').on('click',function(){
+
+            $('#honoree-modal').modal('show');
+            $('#honoree-modal .name').html('Caryl Lees Witte');
+            $('#honoree-modal .modal-body').html(" Caryl has spent her lifetime supporting those in the community who have faced behavioral health"+
+                "challenges or been marginalized. As part of Caryl’s commitment to behavioral health, she has been a"+
+            "staunch advocate for the behavioral health community and served as the lead underwriter for the BHC"+
+            "Luncheon for the past 15 years.");
+        });
+
+        $('.nathan-fletcher').on('click',function(){
+
+            $('#honoree-modal').modal('show');
+            $('#honoree-modal .name').html('Nathan Fletcher');
+            $('#honoree-modal .modal-body').html(" Thank you for demonstrating devotion to building awareness and support for those in our community"+
+            "facing behavioral health challenges. As Chair of the San Diego County Board of Supervisors, he is leading"+
+            "the effort to confront COVID-19 and ensure we build back better through the recovery. He is also"+
+            "focused on transforming our approach to behavioral health, making substantial investments in our"+
+            "mental health and drug treatment programs.");
         });
     });
 </script>
