@@ -144,7 +144,7 @@
 
                         <div class="col-md-2 col-sm-12 col-md-offset-1">
                             <div style="text-align: center !important;">
-                                <a class="" href="<?=base_url().'sessions/attend'?>">
+                                <a class="" href="<?= base_url() ?>sessions">
                                     <div class="col-lg box-home ml-5 mr-5 p-5 text-center" >
                                         <span class="fas fa-chalkboard-teacher"  style="font-size: 135px !important; margin-top:50px;"></span>
                                         <br>
