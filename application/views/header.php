@@ -477,7 +477,7 @@ else
                                             <li><a href=""  class="hoverThemeColour">AUCTION</a></li>
                                         </ul>
                                         <ul class="main-menu nav navbar-nav navbar-right" id="nav-claim-credit">
-                                            <li><a href=""  class="hoverThemeColour">HONOREES</a></li>
+                                            <li><a href="<?=base_url().'honorees'?>"  class="hoverThemeColour">HONOREES</a></li>
                                         </ul>
                                         <ul class="main-menu nav navbar-nav navbar-right" id="nav-product-theaters">
                                             <li><a href="<?=base_url().'underwriters'?>"  class="hoverThemeColour">UNDERWRITERS</a></li>

@@ -341,6 +341,21 @@ $user_name = ucfirst($this->session->userdata('uname'));
                                 </a>
                             </li>
                             <?php } ?>
+
+                            <?php if ($user_role == 'super_admin') { ?>
+                                <li class="<?= ($uri_segment == 'honorees_message') ? 'active' : ''; ?>" >
+                                    <a href="<?= site_url() ?>admin/honorees_message" id="dash">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <i class="fa fa-envelope-o"></i>
+                                            </div>
+                                            <div class="item-inner">
+                                                <span class="title">Honorees Messages</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            <?php } ?>
 							
                         </ul>
                     </nav>
