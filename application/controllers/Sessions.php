@@ -375,37 +375,28 @@ class Sessions extends CI_Controller {
 
     public function attend_vip_meet() {
 
-            $date= date('Y-m-d');
-            $time= date('H:i:s');
-
             $this->db->select('*');
             $this->db->from('sessions');
-            $this->db->where('sessions_date',$date);
-            $this->db->where('sessions_date',$date);
-            $this->db->where('end_time >', $time);
-            $this->db->where('vip_session =', "1");
-            $this->db->order_by('time_slot','asc');
+            $this->db->where('sessions_id =', "3");
             $session=$this->db->get();
-
             if($session->num_rows() > 0){
-                $sessions_id=($session->result()[0]->sessions_id);
+
                 $vip_session=($session->result()[0]->vip_session);
+                $zoom_link = ($session->result()[0]->zoom_redirect_url);
+                $zoom_redirect = ($session->result()[0]->zoom_redirect);
                 if($vip_session=="1" && $this->session->userdata('vipType')=="0"){
                     redirect(base_url().'home');
                     die;
+                }
+                if($zoom_redirect == 1){
+                    if($zoom_link !== ""){
+                        redirect($zoom_link);
+                    }
                 }
             }else{
                 redirect(base_url().'home');
                 die;
             }
-
-            $headerData['session_id'] = $sessions_id;
-
-            $data["sessions"] = $this->objsessions->viewSessionsData($sessions_id);
-
-            $this->load->view('header', $headerData);
-            $this->load->view('view_attend', $data);
-            $this->load->view('footer');
 
         }
 
