@@ -441,7 +441,7 @@ else
                                             <li><a href="<?=base_url().'underwriters'?>"  class="hoverThemeColour">UNDERWRITERS</a></li>
                                         </ul>
                                         <ul class="main-menu nav navbar-nav navbar-right" id="nav-sessions">
-                                            <li><a href=""  class="hoverThemeColour" id="vip-meet-greet">VIP MEET & GREET</a></li>
+                                            <li><a href="<?= base_url().'sessions/attend_vip_meet'?>"  class="hoverThemeColour" id="vip-meet-greet">VIP MEET & GREET</a></li>
                                         </ul>
                                         <ul class="main-menu nav navbar-nav navbar-right" id="nav-home">
                                             <li><a href="<?=base_url().'sessions/attend'?>"class="hoverThemeColour">MAIN EVENT</a></li>

@@ -359,6 +359,8 @@ class Sessions extends CI_Controller {
             die;
         }
 
+
+
         $headerData['session_id'] = $sessions_id;
 
         $data["sessions"] = $this->objsessions->viewSessionsData($sessions_id);
@@ -369,6 +371,43 @@ class Sessions extends CI_Controller {
 
         }
     }
+
+
+    public function attend_vip_meet() {
+
+            $date= date('Y-m-d');
+            $time= date('H:i:s');
+
+            $this->db->select('*');
+            $this->db->from('sessions');
+            $this->db->where('sessions_date',$date);
+            $this->db->where('sessions_date',$date);
+            $this->db->where('end_time >', $time);
+            $this->db->where('vip_session =', "1");
+            $this->db->order_by('time_slot','asc');
+            $session=$this->db->get();
+
+            if($session->num_rows() > 0){
+                $sessions_id=($session->result()[0]->sessions_id);
+                $vip_session=($session->result()[0]->vip_session);
+                if($vip_session=="1" && $this->session->userdata('vipType')=="0"){
+                    redirect(base_url().'home');
+                    die;
+                }
+            }else{
+                redirect(base_url().'home');
+                die;
+            }
+
+            $headerData['session_id'] = $sessions_id;
+
+            $data["sessions"] = $this->objsessions->viewSessionsData($sessions_id);
+
+            $this->load->view('header', $headerData);
+            $this->load->view('view_attend', $data);
+            $this->load->view('footer');
+
+        }
 
     public function gettimenow() {
         echo json_encode(array("current_time" => date("H:i:s")));

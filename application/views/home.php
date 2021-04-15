@@ -178,7 +178,7 @@
                         </div>
 
                         <div class="col-md-2 col-sm-12">
-                            <a class="" href="<?= base_url().'claimCredit'?>">
+                            <a class="" href="<?= base_url().'sessions/attend_vip_meet'?>">
                                 <div class="col-lg box-home ml-5 mr-5 p-5 text-center">
                                     <span class="fa fa-handshake"  style="font-size: 135px !important; margin-top:50px;"></span>
                                     <br>
