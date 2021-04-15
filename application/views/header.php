@@ -419,49 +419,7 @@ else
                                                 </li>
                                         </ul>
                                                 <?php }?>
-                                        <ul class="nav navbar-nav navbar-right">
-                                            <?php
-                                            if (isset($right_bar) && isset($tool_box_status)) {
-                                            if ($tool_box_status == "1" && sessionRightBarControl($right_bar, "resources")) {
-                                            ?>
-                                                <li class="sticky_resources_open" data-type="resourcesSticky"><a data-type2="off" class="hoverThemeColour">RESOURCES</a></li>
-                                            <?php
-                                               }}
-                                            ?>
-
-                                            <li>
-                                                <a target="_blank" class="hoverThemeColour" id="toolbox" >TOOLBOX</a>
-                                                <ul class="toolboxCustomDrop">
-                                                    <?php
-                                                    if (isset($right_bar) && isset($tool_box_status)) {
-                                                        if ($tool_box_status == "1") {
-                                                            if (sessionRightBarControl($right_bar, "questions")) {
-                                                                ?>
-                                                                <li data-type="questionsSticky"><a data-type2="off" class="hoverThemeColour"><i class="fa fa-question" aria-hidden="true"></i> ASK QUESTIONS</a></li>
-                                                                <?php
-                                                            }
-                                                            if (sessionRightBarControl($right_bar, "notes")) {
-                                                                ?>
-                                                                <li data-type="notesSticky"><a data-type2="off" class="hoverThemeColour"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> TAKE NOTES</a></li>
-                                                                <?php
-                                                            }
-                                                            if (sessionRightBarControl($right_bar, "chat")) {
-                                                                ?>
-                                                                <li data-type="messagesSticky"><a data-type2="off" class="hoverThemeColour"><i class="fa fa-comments" aria-hidden="true"></i> CHAT</a></li>
-                                                                <?php
-                                                            }
-                                                            if (sessionRightBarControl($right_bar, "resources")) {
-                                                                ?>
-                                                                <li data-type="resourcesSticky"><a data-type2="off" class="hoverThemeColour"><i class="fa fa-paperclip" aria-hidden="true"></i> RESOURCES</a></li>
-                                                                <?php
-                                                            }
-                                                        }
-                                                    }
-                                                    ?>
-                                                </ul>
-                                            </li>
-                                        </ul>
-
+                                        
                                     <?php } ?>
                                     <?php                   if ($this->session->userdata('cid') != "") {?>
                                     <ul class="main-menu nav navbar-nav navbar-right">
