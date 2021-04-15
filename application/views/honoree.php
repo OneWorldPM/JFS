@@ -127,11 +127,15 @@
         text-align: center;
         color: green;
     }
+    .parallax{
+        height: auto !important;
+        padding-bottom: 20% !important;
+    }
 </style>
 <section class="parallax" style="background-image: url(<?= base_url() ?>front_assets/images/honorees/Site_Background_05_Honorees.jpg);">
     <div class="container container-fullscreen" id="home_first_section">
         <div class="text-middle">
-            <div class="row">
+            <div class="row" style="margin-top: 200px">
                 <div class="col-md-4">
                     <div class="caryl-lees" style="float:right;cursor: pointer;">
                         <img src="<?= base_url() ?>front_assets/images/honorees/CarylWitte.jpg"  class="photo-box">
@@ -164,7 +168,7 @@
                     </div>
                 </div>
             </div>
-            <br>
+
             <div class="row">
                 <div class="col-md-6" style="text-align: center">
                     <div class="message-box">
