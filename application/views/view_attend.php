@@ -1,3 +1,4 @@
+<?php //print_r($zoom_link);exit;?>
 <style>
     .progress-bar {
         height: 100%;
@@ -41,6 +42,9 @@
     section{
         padding: 25px 0px;
     }
+    .parallax{
+        padding-bottom: 50%;
+    }
 </style>
 <section class="parallax" style="background-image: url(<?= base_url() ?>front_assets/images/attend_background.png); top: 0; padding-top: 0px;">
     <div class="container container-fullscreen"> 
@@ -70,9 +74,9 @@
                                 <div class="col-md-12" style="background-color: #B2B7BB; margin-bottom: 10px;">
                                     <h3 style="margin-bottom: 5px; color: #fff; font-weight: 700; text-transform: uppercase;"><?= isset($sessions) ? $sessions->session_title : "" ?></h3>
                                 </div>    
-                                <div class="col-md-7 m-t-20" style="border-right: 1px solid;">
+                                <div class="col-md-12 m-t-20" style="border-right: 1px solid;">
                                     <div class="row">
-                                        <div class="col-md-4">
+                                        <div class="col-md-2">
                                             <?php if ($sessions->sessions_photo != "") { ?>
                                                 <img alt="" src="<?= base_url() ?>uploads/sessions/<?= (isset($sessions) && !empty($sessions)) ? $sessions->sessions_photo : "" ?>" style="width: 100%;">
                                             <?php } else { ?>
@@ -81,37 +85,12 @@
                                         </div>  
                                         <div class="col-md-8">
                                             <h2 style="margin-bottom: 0px;"><?= (isset($sessions) && !empty($sessions)) ? $sessions->session_title : "" ?></h2>
-                                            <small><i class="fa fa-calendar" aria-hidden="true"></i> <?= date("M-d-Y", strtotime($sessions->sessions_date)) . ' ' . date("h:i A", strtotime($sessions->time_slot)) . ' - ' . date("h:i A", strtotime($sessions->end_time)) ?></small>  ET
+                                            <small><i class="fa fa-calendar" aria-hidden="true"></i> <?= date("M-d-Y", strtotime($sessions->sessions_date)) . ' ' . date("h:i A", strtotime($sessions->time_slot)) . ' - ' . date("h:i A", strtotime($sessions->end_time)) ?></small>  PT
                                             <p class="m-t-20"><?= (isset($sessions) && !empty($sessions)) ? $sessions->sessions_description : "" ?></p>
                                         </div>    
                                     </div>
                                 </div>
-                                <div class="col-md-5" style="text-align: center;">
-                                    <?php
-                                    $size = 0;
-                                    if (isset($sessions->presenter) && !empty($sessions->presenter)) {
-                                        $size = sizeof($sessions->presenter);
-                                    }
-                                    ?>
-                                    <?php if ($size <= 2) { ?>
-                                        <br>
-                                        <br>
-                                    <?php } ?>
-                                    <?php
-                                    if (isset($sessions->presenter) && !empty($sessions->presenter)) {
-                                        foreach ($sessions->presenter as $value) {
-                                            ?>
-                                            <h3 style="margin-bottom: 0px; " data-presenter_photo="<?= $value->presenter_photo ?>" data-presenter_name="<?= $value->presenter_name ?>" data-designation="<?= $value->designation ?>" data-email="<?= $value->email ?>" data-company_name="<?= $value->company_name ?>" class="" ><?= $value->presenter_name ?><?= ($value->degree != "") ? "," : "" ?> <?= $value->degree ?></h3>
-                                            <h3 style="margin-bottom: 0px; "> <?= $value->company_name ?></h3>
-                                            <!--<p class="m-t-20"><?= (isset($sessions) && !empty($sessions)) ? $sessions->bio : "" ?></p>-->
-                                            <!--<img alt="" src="<?= base_url() ?>uploads/presenter_photo/<?= (isset($sessions) && !empty($sessions)) ? $sessions->presenter_photo : "" ?>" class="img-circle" height="100" width="100">-->
-                                            <?php
-                                        }
-                                    }
-                                    ?>
-<!--<p class="m-t-20"><?= (isset($sessions) && !empty($sessions)) ? $sessions->bio : "" ?></p>-->
-<!--<img alt="" src="<?= base_url() ?>uploads/presenter_photo/<?= (isset($sessions) && !empty($sessions)) ? $sessions->presenter_photo : "" ?>" class="img-circle" height="100" width="100">-->
-                                </div>
+
                                 <div class="col-md-12 m-t-40">
                                     <div class="col-md-4 col-md-offset-4" style="text-align: center; text-align: center; padding: 10px; background-color: #fff; border: 1px solid;">
                                         <p><i class="fa fa-info-circle" aria-hidden="true" style="font-size: 20px;"></i></p>
@@ -160,7 +139,7 @@
 
 
     var session_id = "<?=$sessions->sessions_id?>";
-
+    var zoom_link ="<?=(isset($zoom_link))?$zoom_link:''?>";
 
     $(document).ready(function () {
         if ($("#time_second").val() <= 0) {
@@ -218,6 +197,10 @@
         }
         document.getElementById('id_day_time').innerHTML = pad(days) + " " + days_lable + ", " + pad(hours) + " " + hours_lable + ", " + pad(minutes) + " " + minutes_lable + ", " + pad(remainingSeconds) + " " + remainingSeconds_lable;
         if (seconds <= 0) {
+            if(zoom_link!==""){
+                window.location = zoom_link;
+                return false;
+            }
             window.location = "<?= site_url() ?>sessions/view/<?= (isset($sessions) && !empty($sessions)) ? $sessions->sessions_id : "" ?>";
                     } else {
                         seconds--;
