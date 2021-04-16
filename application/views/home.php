@@ -8,6 +8,10 @@
         font-weight: 700;
         vertical-align: middle;
     }
+    .icons{
+        font-size: 135px ;
+        min-font-size: 70px;
+    }
 
     .box-home {
         border-radius: 30px;
@@ -51,11 +55,75 @@
         #home_first_section{
             height: 550px;
         }
+         .box-home {
+             border-radius: 30px;
+             background-color: rgba(250, 250, 250, 0.8);
+             border-color: #FFFFFF !important;
+             border-width: 3pt !important;
+             border-style: solid;
+             max-width: 380px;
+             min-width: 190px;
+             min-height: 250px;
+             max-height: 250px;
+             margin-left:30px;
+             padding: unset;
+         }
+         .icons{
+             font-size: 135px ;
+             min-font-size: 70px;
+         }
+         .col-md-2{
+         }
+         .row{
+             min-width: 800px;
+             max-width: 800px;
+         }
+         .banner2 img{
+             min-width: 250px;
+             max-width: 800px;
+             min-height: 200px;
+             max-height: 300px;
+         }
+        body{
+            height: 100%;
+        }
+         .parallax
+         {
+             padding-bottom: 1300px;
+             height: 100%;
+         }
     }
 
     @media (min-width: 1000px) and (max-width: 1400px)  {
         #home_first_section{
             height: 590px;
+
+        }
+        .box-home {
+            border-radius: 30px;
+            background-color: rgba(250, 250, 250, 0.8);
+            border-color: #FFFFFF !important;
+            border-width: 3pt !important;
+            border-style: solid;
+            max-width: 350px;
+            min-width: 170px;
+            min-height: 250px;
+            max-height: 250px;
+            padding: unset;
+        }
+        .icons{
+            font-size: 110px ;
+            min-font-size: 70px;
+        }
+        .banner2 img{
+            min-width: 950px;
+            max-width: 950px;
+            min-height: 200px;
+            max-height: 300px;
+        }
+        h3{
+            font-size: 18px ;
+            min-font-size: 30px;
         }
     }
 
@@ -63,6 +131,7 @@
         #home_first_section{
             height: 700px;
         }
+
     }
 
     @media (min-width: 1600px) and (max-width: 1800px)  {
@@ -136,17 +205,18 @@
                     
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <img src="<?=base_url()?>front_assets/images/event_banner_2.png">
+                            <div class="banner2">
+                                <img src="<?=base_url()?>front_assets/images/event_banner_2.png">
+                            </div>
+
                         </div>
                     </div>
-
                     <div class="row justify-content-center " style="text-align: -webkit-center;">
-
                         <div class="col-md-2 col-sm-12 col-md-offset-1">
                             <div style="text-align: center !important;">
                                 <a class="" href="<?=base_url().'sessions/attend'?>">
                                     <div class="col-lg box-home ml-5 mr-5 p-5 text-center" >
-                                        <span class="fas fa-chalkboard-teacher"  style="font-size: 135px !important; margin-top:50px;"></span>
+                                        <span class="fas fa-chalkboard-teacher icons"  style=" margin-top:50px;"></span>
                                         <br>
                                         <br>
                                         <span><h3>Main Event</h3></span>
@@ -158,7 +228,7 @@
                         <div class="col-md-2 col-sm-12">
                             <a class="" href="<?= base_url().'underwriters'?>"">
                             <div class="col-lg box-home ml-5 mr-5 p-5 text-center">
-                                <span class="fa fa-desktop"  style="font-size: 135px !important; margin-top:50px;"></span>
+                                <span class="fa fa-desktop icons"  style=" margin-top:50px;"></span>
                                 <br>
                                 <br>
                                 <span><h3>Underwriters</h3></span>
@@ -169,7 +239,7 @@
                         <div class="col-md-2 col-sm-12">
                             <a class="" href="<?= base_url().'honorees'?>">
                                 <div class="col-lg box-home ml-5 mr-5 p-5 text-center">
-                                    <span class="fa fa-trophy"  style="font-size: 135px !important; margin-top:50px;"></span>
+                                    <span class="fa fa-trophy icons"  style="margin-top:50px;"></span>
                                     <br>
                                     <br>
                                     <span><h3>Honorees</h3></span>
@@ -180,7 +250,7 @@
                         <div class="col-md-2 col-sm-12">
                             <a class="" href="<?= base_url().'sessions/attend_vip_meet'?>" id="vip-meet-greet-icon">
                                 <div class="col-lg box-home ml-5 mr-5 p-5 text-center">
-                                    <span class="fa fa-handshake"  style="font-size: 135px !important; margin-top:50px;"></span>
+                                    <span class="fa fa-handshake icons"  style=" margin-top:50px;"></span>
                                     <br>
                                     <br>
                                     <span><h3>VIP Meet and Greet</h3></span>
@@ -191,7 +261,7 @@
                         <div class="col-md-2  col-sm-12">
                             <a class="" href="<?= base_url().'claimCredit'?>">
                                 <div class="col-lg box-home ml-5 mr-5 p-5 text-center ">
-                                    <span class="fa fa-gavel"  style="font-size: 135px !important; margin-top:50px;"></span>
+                                    <span class="fa fa-gavel icons"  style=" margin-top:50px;"></span>
                                     <br>
                                     <br>
                                     <span><h3>Auction</h3></span>
