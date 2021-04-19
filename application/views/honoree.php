@@ -56,12 +56,16 @@
         margin-top: 50px;
         text-align: center;
         color: #FFFFFF;
-        font-size: 33px;
-        font-style: ;
-        font-weight: 700 !important;
         text-transform: uppercase;
         line-height: 50px;
         white-space: nowrap;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 40px;
+        font-style: ;
+        font-weight: 900 !important;
+        text-transform: uppercase;
     }
     .text-white{
         color: #FFFFFF;
@@ -121,6 +125,11 @@
         float:right;
         margin-right: 20px;
         width: 120px;
+        background-color: #8c7ab7;
+        color: #FFFFFF;
+    }
+    .message-send-btn :hover{
+
     }
     .message-notif{
         margin-top: 20px;
@@ -142,7 +151,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 ">
-                    <div class="text-mid">
+                    <div class="text-mid ">
                         HONOREE'S <br> VIRTUAL <br> TRIBUTE BOOKS
                     </div>
                 </div>
@@ -162,8 +171,8 @@
                 </div>
                 <div class="col-md-6 ">
                     <div class="text-white" style="margin-left: 70px">
-                        <a class="nathan-fletcher" style="cursor: pointer" ><h3 class="text-white-h1">Nathan Fletcher</h3></a>
-                        <h4 class="text-white-h2">Supervisor of San Diego's Fourth District</h4>
+                        <a class="nathan-fletcher" style="cursor: pointer" ><h3 class="text-white-h1">Chair Nathan Fletcher</h3></a>
+
                         <p class="text-white-h4">Behavioral Health Hero Award</p>
                     </div>
                 </div>
@@ -177,7 +186,7 @@
                             <div class="message-notif notif-1"></div>
                             <form>
                                 <textarea type="text" class="message-body message-1"></textarea>
-                                <button class=" btn btn-success message-send-btn send-1"> SEND <span class="fa fa-paper-plane-o" ></span></button>
+                                <button class=" btn message-send-btn send-1"> SEND <span class="fa fa-paper-plane-o" ></span></button>
                             </form>
                         </div>
                     </div>
@@ -188,8 +197,8 @@
                             <p class="text-white-h3">Leave a message for Nathan Fletcher here</p>
                             <div class="message-notif notif-2"></div>
                             <form>
-                                <textarea type="text" class="message-body message-2"></textarea>
-                                <button class=" btn btn-success message-send-btn send-2"> SEND <span class="fa fa-paper-plane-o" ></span></button>
+                                <textarea type="text" class="message-body message-2" ></textarea>
+                                <button class=" btn message-send-btn send-2"> SEND <span class="fa fa-paper-plane-o" ></span></button>
                             </form>
                         </div>
                     </div>
