@@ -226,6 +226,17 @@
                         </div>
 
                         <div class="col-md-2 col-sm-12">
+                            <a class="" href="<?= base_url().'sessions/attend_vip_meet'?>" id="vip-meet-greet-icon">
+                                <div class="col-lg box-home ml-5 mr-5 p-5 text-center">
+                                    <span class="fa fa-handshake icons"  style=" margin-top:50px;"></span>
+                                    <br>
+                                    <br>
+                                    <span><h3>VIP Meet and Greet</h3></span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-2 col-sm-12">
                             <a class="" href="<?= base_url().'underwriters'?>"">
                             <div class="col-lg box-home ml-5 mr-5 p-5 text-center">
                                 <span class="fa fa-desktop icons"  style=" margin-top:50px;"></span>
@@ -243,17 +254,6 @@
                                     <br>
                                     <br>
                                     <span><h3>Honorees</h3></span>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-md-2 col-sm-12">
-                            <a class="" href="<?= base_url().'sessions/attend_vip_meet'?>" id="vip-meet-greet-icon">
-                                <div class="col-lg box-home ml-5 mr-5 p-5 text-center">
-                                    <span class="fa fa-handshake icons"  style=" margin-top:50px;"></span>
-                                    <br>
-                                    <br>
-                                    <span><h3>VIP Meet and Greet</h3></span>
                                 </div>
                             </a>
                         </div>
