@@ -137,7 +137,7 @@
 </div>
 <script type="text/javascript">
 
-
+    var vip_type = "<?=$this->session->userdata('vipType')?>";
     var session_id = "<?=$sessions->sessions_id?>";
     var zoom_link ="<?=(isset($zoom_link))?$zoom_link:''?>";
 
@@ -145,6 +145,10 @@
         if ($("#time_second").val() <= 0) {
             timer();
         } else {
+            if(vip_type == "0" ){
+                window.location = "<?=base_url().'home'?>";
+                return false;
+            }
             setInterval('timer()', 1000);
         }
         $(".presenter_open_modul").click(function () {
