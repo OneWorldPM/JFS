@@ -122,13 +122,16 @@
 
 
         }
+        .col-md-10{
+            width: 100%;
+        }
 
     }
 
     @media (min-width: 1400px) and (max-width: 1600px)  {
-        #home_first_section{
-
-        }
+       .col-md-10{
+           width: 100%;
+       }
 
     }
 
