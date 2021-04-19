@@ -1,9 +1,6 @@
 
 <style>
-    body{
-        margin-top: -50px;
-        background-size: cover;
-    }
+
     h4{
         color:white;
     }
@@ -139,6 +136,8 @@
     .parallax{
         height: auto !important;
         padding-bottom: 20% !important;
+        margin-top: -50px;
+        background-size: cover;
     }
 </style>
 <section class="parallax" style="background-image: url(<?= base_url() ?>front_assets/images/honorees/Site_Background_05_Honorees.jpg);">
@@ -171,7 +170,7 @@
                 </div>
                 <div class="col-md-6 ">
                     <div class="text-white" style="margin-left: 70px">
-                        <a class="nathan-fletcher" style="cursor: pointer" ><h3 class="text-white-h1">Chair Nathan Fletcher</h3></a>
+                        <a class="nathan-fletcher" style="cursor: pointer" ><h3 class="text-white-h1"><i>Chair:</i> Nathan Fletcher</h3></a>
 
                         <p class="text-white-h4">Behavioral Health Hero Award</p>
                     </div>
@@ -179,7 +178,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-6" style="text-align: center">
+                <div class="col-md-6" style="   text-align: center">
                     <div class="message-box">
                         <div class="message-header"><br>
                             <p class="text-white-h3">Leave a message for Caryl Lees Witte here</p>
