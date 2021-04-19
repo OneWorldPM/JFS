@@ -115,6 +115,15 @@
         .head-text{
             line-height: 35px;
         }
+        .row{
+            height: auto;
+        }
+        .col{
+
+            justify-content: center;
+
+        }
+
     }
 
     @media (min-width: 1000px) and (max-width: 1400px)  {
@@ -125,6 +134,14 @@
         .col-md-10{
             width: 100%;
         }
+        .row{
+            height: auto;
+        }
+        .col{
+
+            justify-content: center;
+
+        }
 
     }
 
@@ -132,6 +149,14 @@
        .col-md-10{
            width: 100%;
        }
+        .row{
+            height: auto;
+        }
+        .col{
+
+            justify-content: center;
+
+        }
 
     }
 
@@ -139,12 +164,20 @@
         #home_first_section{
 
         }
+        .col{
+
+            justify-content: center;
+
+        }
+
+
     }
 
     @media (min-width: 1800px) and (max-width: 2200px)  {
         #home_first_section{
 
         }
+
     }
 
     @media (min-width: 2200px) and (max-width: 2800px)  {
@@ -170,9 +203,7 @@
         }
     }
     .parallax{
-        padding-bottom: 50%;
         margin-top: -50px;
-        background-size: cover;
     }
     .flex-container{
 
