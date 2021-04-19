@@ -259,7 +259,7 @@
                         </div>
 
                         <div class="col-md-2  col-sm-12">
-                            <a class="" href="<?= base_url().'claimCredit'?>">
+                            <a class="" href="https://bit.ly/3afPDTB" target="_blank">
                                 <div class="col-lg box-home ml-5 mr-5 p-5 text-center ">
                                     <span class="fa fa-gavel icons"  style=" margin-top:50px;"></span>
                                     <br>

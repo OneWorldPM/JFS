@@ -432,7 +432,7 @@ else
 
                                     <?php  if ($this->session->userdata('cid') != "") {?>
                                         <ul class="main-menu nav navbar-nav navbar-right" id="nav-claim-credit">
-                                            <li><a href=""  class="hoverThemeColour">AUCTION</a></li>
+                                            <li><a href="https://bit.ly/3afPDTB" target="_blank"  class="hoverThemeColour">AUCTION</a></li>
                                         </ul>
                                         <ul class="main-menu nav navbar-nav navbar-right" id="nav-claim-credit">
                                             <li><a href="<?=base_url().'honorees'?>"  class="hoverThemeColour">HONOREES</a></li>
