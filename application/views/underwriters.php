@@ -33,11 +33,11 @@
         font-size: 18px;
     }
     .logos{
-        margin-top: 10px;
+        margin-top: 15px;
         margin-bottom: 0px;
         margin-right: 0px;
         padding: 2px;
-        margin-left:60px;
+        margin-left:55px;
         max-width:120px;
         max-height:75px;
         display: inline;
