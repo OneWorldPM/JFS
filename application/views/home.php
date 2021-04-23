@@ -25,6 +25,7 @@
         max-height: 180px;
         padding: unset;
         margin-top: 100px;
+        flex-wrap: wrap;
     }
 
 
@@ -41,11 +42,37 @@
     .col-sm-12 {
         margin-bottom: 10px;
     }
+
+    @media (min-width: 400px) and (max-width: 768px) {
+
+        .row{
+            justify-content: center;
+            min-width: 300px;
+            max-width: 768px;
+            height: 100%;
+        }
+        .parallax
+        {
+            padding-bottom: 50%;
+            height: 100%;
+        }
+        .banner2 img{
+            justify-content: center;
+            margin-top: 250px;
+            min-width: 250px;
+            max-width: 600px;
+            min-height: 200px;
+            max-height: 250px;
+
+        }
+        .col-md-12{
+            width: 100%;
+        }
+
+    }
     
      @media (min-width: 768px) and (max-width: 1000px)  {
-        #home_first_section{
-            height: 550px;
-        }
+
          .box-home {
              border-radius: 30px;
              background-color: rgba(250, 250, 250, 0.8);
@@ -63,15 +90,16 @@
              font-size: 135px ;
              min-font-size: 70px;
          }
-         .col-md-2{
-         }
+
          .row{
-             min-width: 800px;
-             max-width: 800px;
+             justify-content: center;
+             min-width: 100%;
+             max-width: 100%;
+             height: 100%;
          }
-             .banner2 img{
-                 justify-content: center;
-                 margin-top: 250px;
+         .banner2 img{
+             justify-content: center;
+             margin-top: 250px;
              min-width: 250px;
              max-width: 800px;
              min-height: 200px;
@@ -80,12 +108,14 @@
          }
         body{
             height: 100%;
+            width: 100%;
         }
          .parallax
          {
-             padding-bottom: 1300px;
+             padding-bottom: 300px;
              height: 100%;
          }
+
     }
 
     @media (min-width: 1000px) and (max-width: 1400px)  {
@@ -121,11 +151,21 @@
             font-size: 18px ;
             min-font-size: 30px;
         }
+        .parallax
+        {
+            padding-bottom: 50%;
+            height: 100%;
+        }
     }
 
     @media (min-width: 1400px) and (max-width: 1600px)  {
         #home_first_section{
             height: 700px;
+        }
+        .parallax
+        {
+            padding-bottom: 50%;
+            height: 100%;
         }
 
     }
@@ -134,11 +174,21 @@
         #home_first_section{
             height: 800px;
         }
+        .parallax
+        {
+            padding-bottom: 50%;
+            height: 100%;
+        }
     }
 
     @media (min-width: 1800px) and (max-width: 2200px)  {
         #home_first_section{
             height: 900px;
+        }
+        .parallax
+        {
+            padding-bottom: 50%;
+            height: 100%;
         }
     }
 
@@ -146,10 +196,20 @@
         #home_first_section{
             height: 1100px;
         }
+        .parallax
+        {
+            padding-bottom: 50%;
+            height: 100%;
+        }
     }
     @media (min-width: 2800px) and (max-width: 3200px)  {
         #home_first_section{
             height: 1450px;
+        }
+        .parallax
+        {
+            padding-bottom: 50%;
+            height: 100%;
         }
     }
 
@@ -157,11 +217,21 @@
         #home_first_section{
             height: 1950px;
         }
+        .parallax
+        {
+            padding-bottom: 50%;
+            height: 100%;
+        }
     }
 
     @media (min-width: 4200px) and (max-width: 6000px)  {
         #home_first_section{
             height: 2550px;
+        }
+        .parallax
+        {
+            padding-bottom: 50%;
+            height: 100%;
         }
     }
     .box-home{
@@ -173,9 +243,6 @@
         height: 100%;
     }
 
-    .wrapper{
-        height: 100%;
-    }
 
     .parallax
     {
