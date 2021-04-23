@@ -67,6 +67,7 @@
     .text-white{
         color: #FFFFFF;
         text-align: center;
+        margin-top: 20px;
     }
     .text-white-h1{
         text-align: center;
@@ -158,6 +159,7 @@
         margin-top: 100px;
     }
 
+
     @media (min-width: 650px) and (max-width: 1000px) {
         .container-body{
 
@@ -217,6 +219,7 @@
             <div class="caryl-lees" style="float:right;cursor: pointer;">
                 <img src="<?= base_url() ?>front_assets/images/honorees/CarylWitte.jpg" class="photo-box" style="cursor: pointer;"><br>
             </div>
+            <br>
             <br>
             <div class="text-white">
                 <a class="caryl-lees" style="cursor: pointer"><h3 class="text-white-h1">Caryl Lees Witte</h3></a>
