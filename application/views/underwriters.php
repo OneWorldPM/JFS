@@ -33,13 +33,13 @@
         font-size: 18px;
     }
     .logos{
-        margin-top: 0px;
+        margin-top: 10px;
         margin-bottom: 0px;
         margin-right: 0px;
         padding: 2px;
         margin-left:60px;
-        max-width:110px;
-        max-height:65px;
+        max-width:120px;
+        max-height:75px;
         display: inline;
     }
     .parallax{
