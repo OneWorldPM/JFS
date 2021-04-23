@@ -9,8 +9,8 @@
         vertical-align: middle;
     }
     .icons{
-        font-size: 135px ;
-        min-font-size: 70px;
+        font-size: 110px ;
+        min-font-size: 50px;
     }
 
     .box-home {
@@ -19,23 +19,14 @@
         border-color: #FFFFFF !important;
         border-width: 3pt !important;
         border-style: solid;
-        max-width: 243px;
-        min-width: 243px;
-        min-height: 260px;
-        max-height: 260px;
+        max-width: 190px;
+        min-width: 170px;
+        min-height: 210px;
+        max-height: 180px;
         padding: unset;
+        margin-top: 100px;
     }
-    .box-home_2 {
-        background-color: #444;
-        border-radius: 30px;
-        background: rgba(250, 250, 250, 0.8);
-        max-width: 185px;
-        min-width: 120px;
-        min-height: 160px;
-        max-height: 185px;
-        padding: 15px;
-        padding: 0px !important;
-    }
+
 
     a:hover {
         background-color: #FFFFFF !important;
@@ -61,9 +52,9 @@
              border-color: #FFFFFF !important;
              border-width: 3pt !important;
              border-style: solid;
-             max-width: 380px;
+             max-width: 250px;
              min-width: 190px;
-             min-height: 250px;
+             min-height: 180px;
              max-height: 250px;
              margin-left:30px;
              padding: unset;
@@ -78,11 +69,14 @@
              min-width: 800px;
              max-width: 800px;
          }
-         .banner2 img{
+             .banner2 img{
+                 justify-content: center;
+                 margin-top: 250px;
              min-width: 250px;
              max-width: 800px;
              min-height: 200px;
              max-height: 300px;
+
          }
         body{
             height: 100%;
@@ -107,8 +101,8 @@
             border-style: solid;
             max-width: 350px;
             min-width: 170px;
-            min-height: 250px;
-            max-height: 250px;
+            min-height: 210px;
+            max-height: 180px;
             padding: unset;
         }
         .icons{
@@ -116,10 +110,12 @@
             min-font-size: 70px;
         }
         .banner2 img{
+            margin-top: 100px;
             min-width: 950px;
             max-width: 950px;
             min-height: 200px;
             max-height: 300px;
+
         }
         h3{
             font-size: 18px ;
@@ -189,6 +185,9 @@
     h3{
         color: #FFFFFF;
     }
+    .banner2{
+        margin-top: -140px;
+    }
 </style>
 
 <section class="parallax" style="background-image: url(<?= base_url() ?>front_assets/images/Site_Background_02_Welcome_Lobby.jpg);">
@@ -196,27 +195,19 @@
         <div class="text-middle">
             <div class="row">
                 <div class="col-md-12">
-<!--                    <div class="text-center m-t-0">-->
-<!--                        <h1 style="color: #674ea0; font-family: 'Architects Daughter', cursive; margin-bottom: 0px; font-weight: 700; font-size: 40px;">Welcome, <?//= $this->session->userdata('cname') ?></h1>-->
-<!--                    </div>-->
-<!--                    <div class="col-md-10 col-md-offset-1">
-                  <div class="jumbotron" style="background-image: url(<?/*=base_url()*/?>front_assets/images/Header_Logos_JFS.png);height:300px; background-repeat: no-repeat;   background-size: contain;"></div>
-                    </div>-->
-                    
                     <div class="row">
                         <div class="col-md-12 text-center">
                             <div class="banner2">
-                                <img src="<?=base_url()?>front_assets/images/event_banner_2.png">
+                                <img src="<?=base_url()?>front_assets/images/event_banner_2.png" style="width: 800px;height: 200px">
                             </div>
-
                         </div>
                     </div>
-                    <div class="row justify-content-center " style="text-align: -webkit-center;">
+                    <div class="row justify-content-center " >
                         <div class="col-md-2 col-sm-12 col-md-offset-1">
                             <div style="text-align: center !important;">
                                 <a class="" href="<?=base_url().'sessions/attend'?>">
                                     <div class="col-lg box-home ml-5 mr-5 p-5 text-center" >
-                                        <span class="fas fa-chalkboard-teacher icons"  style=" margin-top:50px;"></span>
+                                        <span class="fas fa-chalkboard-teacher icons" ></span>
                                         <br>
                                         <br>
                                         <span><h3>Main Event</h3></span>
@@ -228,7 +219,7 @@
                         <div class="col-md-2 col-sm-12">
                             <a class="" href="<?= base_url().'sessions/attend_vip_meet'?>" id="vip-meet-greet-icon">
                                 <div class="col-lg box-home ml-5 mr-5 p-5 text-center">
-                                    <span class="fa fa-handshake icons"  style=" margin-top:50px;"></span>
+                                    <span class="fa fa-handshake icons"  ></span>
                                     <br>
                                     <br>
                                     <span><h3>VIP Meet and Greet</h3></span>
@@ -239,7 +230,7 @@
                         <div class="col-md-2 col-sm-12">
                             <a class="" href="<?= base_url().'underwriters'?>"">
                             <div class="col-lg box-home ml-5 mr-5 p-5 text-center">
-                                <span class="fa fa-desktop icons"  style=" margin-top:50px;"></span>
+                                <span class="fa fa-hand-holding-heart icons"  ></span>
                                 <br>
                                 <br>
                                 <span><h3>Underwriters</h3></span>
@@ -250,7 +241,7 @@
                         <div class="col-md-2 col-sm-12">
                             <a class="" href="<?= base_url().'honorees'?>">
                                 <div class="col-lg box-home ml-5 mr-5 p-5 text-center">
-                                    <span class="fa fa-trophy icons"  style="margin-top:50px;"></span>
+                                    <span class="fa fa-award icons"  ></span>
                                     <br>
                                     <br>
                                     <span><h3>Honorees</h3></span>
@@ -261,7 +252,7 @@
                         <div class="col-md-2  col-sm-12">
                             <a class="" href="https://bit.ly/3afPDTB" target="_blank">
                                 <div class="col-lg box-home ml-5 mr-5 p-5 text-center ">
-                                    <span class="fa fa-gavel icons"  style=" margin-top:50px;"></span>
+                                    <span class="fa fa-gavel icons"  ></span>
                                     <br>
                                     <br>
                                     <span><h3>Auction</h3></span>

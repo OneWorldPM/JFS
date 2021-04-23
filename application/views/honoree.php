@@ -50,19 +50,19 @@
     }
 
     .text-mid{
-        margin-top: 50px;
+        margin-top: 200px;
         text-align: center;
         color: #FFFFFF;
         text-transform: uppercase;
         line-height: 50px;
         white-space: nowrap;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-        text-align: center;
-        color: #FFFFFF;
         font-size: 40px;
         font-style: ;
         font-weight: 900 !important;
-        text-transform: uppercase;
+        position: absolute;
+        width: 100%;
+        pointer-events: none
     }
     .text-white{
         color: #FFFFFF;
@@ -103,18 +103,20 @@
     }
 
     .message-box{
+        flex-wrap: wrap !important;
         width:600px;
         height:300px;
         background-color: #FFFFFF;
         margin:auto;
     }
     .message-header{
-        width: 600px;
+        width: 100%;
         height: 60px;
         background-color: #5E478A;
     }
     .message-body{
-        width: 600px;
+
+        width: 100%;
         height: 120px;
         margin-top: 30px;
     }
@@ -139,68 +141,118 @@
         margin-top: -50px;
         background-size: cover;
     }
+
+    .container-body{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap !important;
+    }
+    .box{
+        max-width:800px;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    @media (min-width: 650px) and (max-width: 1000px) {
+        .container-body{
+
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap !important;
+            flex-direction: row !important;
+        }
+        .box{
+            max-width:800px;
+            min-width: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            align-items: center;
+            margin-top: 200px;
+        }
+        .text-mid{
+            margin-top: 0px;
+
+        }
+    }
+
+    @media (min-width: 1000px) and (max-width: 1400px)  {
+        .message-box{
+            flex-wrap: wrap !important;
+            width:450px;
+            height:300px;
+            background-color: #FFFFFF;
+            margin:auto;
+        }
+        .text-mid{
+            margin-top: 200px;
+            text-align: center;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            line-height: 30px;
+            white-space: nowrap;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            font-size: 25px;
+            font-style: ;
+            font-weight: 900 !important;
+            position: absolute;
+            width: 100%;
+            pointer-events: none
+        }
+
+    }
 </style>
-<section class="parallax" style="background-image: url(<?= base_url() ?>front_assets/images/honorees/Site_Background_05_Honorees.jpg);">
-    <div class="container container-fullscreen" id="home_first_section">
-        <div class="text-middle">
-            <div class="row" style="margin-top: 200px">
-                <div class="col-md-4">
-                    <div class="caryl-lees" style="float:right;cursor: pointer;">
-                        <img src="<?= base_url() ?>front_assets/images/honorees/CarylWitte.jpg"  class="photo-box">
-                    </div>
-                </div>
-                <div class="col-md-4 ">
-                    <div class="text-mid ">
-                        HONOREE'S <br> VIRTUAL <br> TRIBUTE BOOKS
-                    </div>
-                </div>
-                <div class="col-md-4 ">
-                    <div class="nathan-fletcher" style="cursor: pointer;">
-                        <img src="<?= base_url() ?>front_assets/images/honorees/Nathan-Fletcher_Portrait.jpg"  class="photo-box">
-                    </div>
-                </div>
+<section class="parallax"
+         style="background-image: url(<?= base_url() ?>front_assets/images/honorees/Site_Background_05_Honorees.jpg);">
+    <div class="container-body ">
+        <div class="text-mid" > HONOREE'S <br> VIRTUAL <br> TRIBUTE BOOKS</div>
+        <div class="box ">
+            <div class="caryl-lees" style="float:right;cursor: pointer;">
+                <img src="<?= base_url() ?>front_assets/images/honorees/CarylWitte.jpg" class="photo-box" style="cursor: pointer;"><br>
             </div>
             <br>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="text-white" style="margin-right: 70px">
-                        <a class="caryl-lees" style="cursor: pointer"><h3 class="text-white-h1">Caryl Lees Witte</h3></a>
-                        <p class="text-white-h4">Linda Janon Behavioral Health Champion Award</p>
-                    </div>
-                </div>
-                <div class="col-md-6 ">
-                    <div class="text-white" style="margin-left: 70px">
-                        <a class="nathan-fletcher" style="cursor: pointer" ><h3 class="text-white-h1"><i>Chair:</i> Nathan Fletcher</h3></a>
-
-                        <p class="text-white-h4">Behavioral Health Hero Award</p>
-                    </div>
+            <div class="text-white">
+                <a class="caryl-lees" style="cursor: pointer"><h3 class="text-white-h1">Caryl Lees Witte</h3></a>
+                <p class="text-white-h4">Linda Janon Behavioral Health Champion Award</p>
+            </div>
+            <div class="message-box">
+                <div class="message-header"><br>
+                    <p class="text-white-h3">Leave a message for Caryl Lees Witte here</p>
+                    <div class="message-notif notif-1"></div>
+                    <form>
+                        <textarea type="text" class="message-body message-1"></textarea>
+                        <button class=" btn message-send-btn send-1"> SEND <span class="fa fa-paper-plane-o"></span>
+                        </button>
+                    </form>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-md-6" style="   text-align: center">
-                    <div class="message-box">
-                        <div class="message-header"><br>
-                            <p class="text-white-h3">Leave a message for Caryl Lees Witte here</p>
-                            <div class="message-notif notif-1"></div>
-                            <form>
-                                <textarea type="text" class="message-body message-1"></textarea>
-                                <button class=" btn message-send-btn send-1"> SEND <span class="fa fa-paper-plane-o" ></span></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="message-box">
-                        <div class="message-header"><br>
-                            <p class="text-white-h3">Leave a message for Nathan Fletcher here</p>
-                            <div class="message-notif notif-2"></div>
-                            <form>
-                                <textarea type="text" class="message-body message-2" ></textarea>
-                                <button class=" btn message-send-btn send-2"> SEND <span class="fa fa-paper-plane-o" ></span></button>
-                            </form>
-                        </div>
-                    </div>
+        </div>
+        <div class="box ">
+            <div class="nathan-fletcher" style="cursor: pointer;">
+                <img src="<?= base_url() ?>front_assets/images/honorees/Nathan-Fletcher_Portrait.jpg" class="photo-box"><br>
+            </div>
+            <br>
+            <div class="text-white">
+                <a class="nathan-fletcher" style="cursor: pointer"><h3 class="text-white-h1">Chair Nathan Fletcher</h3>
+                </a>
+                <p class="text-white-h4">Behavioral Health Hero Award</p>
+            </div>
+            <div class="message-box">
+                <div class="message-header"><br>
+                    <p class="text-white-h3">Leave a message for Nathan Fletcher here</p>
+                    <div class="message-notif notif-2"></div>
+                    <form>
+                        <textarea type="text" class="message-body message-2"></textarea>
+                        <button class=" btn message-send-btn send-2"> SEND <span class="fa fa-paper-plane-o"></span>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -211,13 +263,13 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel" style="text-align: center">BIO</h5>
+                <h5 class="modal-title" id="exampleModalLabel" style="text-align: center"></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="name" style="text-align: center; font-size: 30px;font-family: Roboto"></div>
-            <div class="modal-body" style="text-align: center;font-family: Roboto">
+            <div class="name" style="text-align: center; font-size: 30px;font-family: Lato"></div>
+            <div class="modal-body" style="text-align: center; font-size: 15px;font-family: Lato">
 
             </div>
             <div class="modal-footer">
@@ -311,7 +363,7 @@
 
             $('#honoree-modal').modal('show');
             $('#honoree-modal .name').html('Nathan Fletcher');
-            $('#honoree-modal .modal-body').html(" Thank you for demonstrating devotion to building awareness and support for those in our community"+
+            $('#honoree-modal .modal-body').html("Thank you for demonstrating devotion to building awareness and support for those in our community"+
             "facing behavioral health challenges. As Chair of the San Diego County Board of Supervisors, he is leading"+
             "the effort to confront COVID-19 and ensure we build back better through the recovery. He is also"+
             "focused on transforming our approach to behavioral health, making substantial investments in our"+

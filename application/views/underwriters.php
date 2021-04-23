@@ -14,7 +14,7 @@
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
         text-align: center;
         color: #FFFFFF;
-        font-size: 40px;
+        font-size: 43px;
         font-style: ;
         font-weight: 900 !important;
         text-transform: uppercase;
@@ -26,18 +26,18 @@
         line-height: 1.5;
     }
     .text{
-
         margin-top: 10px;
         margin-bottom: 10px;
         margin-right: 10px;
         margin-left: 10px;
+        font-size: 18px;
     }
     .logos{
         margin-top: 0px;
         margin-bottom: 0px;
         margin-right: 0px;
         padding: 2px;
-        margin-left:45px;
+        margin-left:60px;
         max-width:110px;
         max-height:65px;
         display: inline;
@@ -52,7 +52,7 @@
         color: #FFFFFF;
         background-color: rgba(1, 0, 7, 0.8);
         width: 400px;
-        height: 650px;
+        height: 870px;
     }
 
     .box2 {
@@ -204,6 +204,7 @@
     }
     .parallax{
         margin-top: -50px;
+        overflow: hidden;
     }
     .flex-container{
 
@@ -224,7 +225,7 @@
                                     <div class="text line-space-1" >
                                         <b> <h4>COUTURE $18,000 </h4></b>
                                         Charitable Adult Rides & Services, Inc.<br>
-                                        Irwin &; Joan Jacobs<br>
+                                        Irwin & Joan Jacobs<br>
                                         The Joseph-Ma Family<br>
                                         The Meiselman Family<br>
                                         Marie G. Raftery & Dr. Robert A. Rubenstein<br>
