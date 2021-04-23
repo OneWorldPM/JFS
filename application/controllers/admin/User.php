@@ -242,5 +242,36 @@ class User extends CI_Controller
         return false;
     }
 
+    public function changeToVip($cust_id){
+//        $post = $this->input->post();
+
+        $this->db->select ('*');
+        $this->db->from('customer_master');
+        $this->db->where('cust_id', $cust_id);
+        $result = $this->db->update('customer_master',array('vip'=>'1'));
+        if($result){
+            $this->session->set_flashdata('msg','success');
+            redirect(base_url().'admin/user');
+        }else{
+            $this->session->set_flashdata('msg','error');
+            redirect(base_url().'admin/user');
+        }
+    }
+
+    public function changeToNonVip($cust_id){
+//        $post = $this->input->post();
+
+        $this->db->select ('*');
+        $this->db->from('customer_master');
+        $this->db->where('cust_id', $cust_id);
+        $result =  $this->db->update('customer_master',array('vip'=>'0'));
+        if($result){
+            $this->session->set_flashdata('msg','success');
+            redirect(base_url().'admin/user');
+        }else{
+            $this->session->set_flashdata('msg','error');
+            redirect(base_url().'admin/user');
+        }
+    }
 
 }
