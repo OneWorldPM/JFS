@@ -33,43 +33,38 @@
         font-size: 18px;
     }
     .logos{
-        margin-top: 15px;
+        margin-top: 18px;
         margin-bottom: 0px;
         margin-right: 0px;
         padding: 2px;
-        margin-left:55px;
+        margin-left:75px;
         max-width:120px;
         max-height:75px;
         display: inline;
     }
     .parallax{
         height:auto!important;
-        padding-bottom: 20%;
+
     }
 
     .box1 {
-
         color: #FFFFFF;
         background-color: rgba(1, 0, 7, 0.8);
-        width: 400px;
-        height: 870px;
+        width: 480px;
+        height: 900px;
     }
 
     .box2 {
-
         color: #FFFFFF;
         background-color: white;
-        width: 400px;
-        height: 870px;
+        width: 480px;
+        height: 900px;
     }
 
     .col{
-
         display: flex;
-        margin: auto;
-        flex: 30%;
-        padding: 10px;
-        height: 870px;
+        margin: 0 auto;
+        height: 100%;
     }
 
     .row {
@@ -95,7 +90,6 @@
         .col{
             display: flex;
             justify-content: center;
-
         }
         .row{
             height: auto;
@@ -164,6 +158,12 @@
         #home_first_section{
 
         }
+        .col-md-10{
+            width: 100%;
+        }
+        .row{
+            height: auto;
+        }
         .col{
 
             justify-content: center;
@@ -175,6 +175,17 @@
 
     @media (min-width: 1800px) and (max-width: 2200px)  {
         #home_first_section{
+
+        }
+        .col-md-10{
+            width: 100%;
+        }
+        .row{
+            height: auto;
+        }
+        .col{
+
+            justify-content: center;
 
         }
 
@@ -205,6 +216,7 @@
     .parallax{
         margin-top: -50px;
         overflow: hidden;
+        padding-bottom: 20%;
     }
     .flex-container{
 
