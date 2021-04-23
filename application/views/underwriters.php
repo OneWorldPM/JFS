@@ -60,7 +60,7 @@
         color: #FFFFFF;
         background-color: white;
         width: 400px;
-        height: 650px;
+        height: 870px;
     }
 
     .col{
@@ -69,7 +69,7 @@
         margin: auto;
         flex: 30%;
         padding: 10px;
-        height: 650px;
+        height: 870px;
     }
 
     .row {
