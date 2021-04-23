@@ -72,7 +72,7 @@
         flex-wrap: wrap;
         display: flex;
         justify-content: center;
-        height: 650px;
+        height: 100%;
     }
 
     @media (max-width: 768px){
@@ -216,7 +216,7 @@
     .parallax{
         margin-top: -50px;
         overflow: hidden;
-        padding-bottom: 20%;
+      
     }
     .flex-container{
 
