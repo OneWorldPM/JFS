@@ -62,8 +62,8 @@
                                                     <td><?= $val->country ?></td>
                                                     <td><?=(isset($val->vip ) && ( $val->vip == "1"))?'VIP':''?></td>
                                                     <td>
-                                                        <?=(isset($val->vip ) && ( $val->vip == "0"))?'<a class="btn btn-danger btn-sm make_vip" href="'.base_url() . 'admin/user/changeToVip/' . $val->cust_id.'">
-                                                            <i class=""></i> Make VIP </a>':'<a class="btn btn-danger btn-sm make_vip" href="'.base_url() . 'admin/user/changeToNonVip/' . $val->cust_id.'">
+                                                        <?=(isset($val->vip ) && ( $val->vip == "0"))?'<a class="btn btn-success btn-sm make_vip" href="'.base_url() . 'admin/user/changeToVip/' . $val->cust_id.'">
+                                                            <i class=""></i> Make VIP </a>':'<a class="btn btn-warning btn-sm make_nonVip" href="'.base_url() . 'admin/user/changeToNonVip/' . $val->cust_id.'">
                                                             <i class=""></i> Remove VIP </a>'?>
 
                                                         <a class="btn btn-danger btn-sm delete_presenter" href="<?= base_url() . 'admin/user/deleteuser/' . $val->cust_id ?>">
