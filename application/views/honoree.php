@@ -7,36 +7,7 @@
     h2{
         color: white;
     }
-    .head-text{
 
-        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-        text-align: center;
-        color: #FFFFFF;
-        font-size: 40px;
-        font-style: ;
-        font-weight: 900 !important;
-        text-transform: uppercase;
-    }
-    .line-space-1{
-        line-height: 1;
-    }
-    .text{
-
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-    .logos{
-        margin-top: 0px;
-        margin-bottom: 0px;
-        margin-right: 0px;
-        padding: 2px;
-        margin-left:25px;
-        max-width:130px;
-        max-height:120px;
-        display: inline;
-    }
     .parallax{
         background-size: cover;
     }
@@ -110,17 +81,20 @@
         background-color: #FFFFFF;
         margin:auto;
     }
+
     .message-header{
         width: 100%;
         height: 60px;
         background-color: #5E478A;
     }
+
     .message-body{
 
         width: 100%;
         height: 120px;
         margin-top: 30px;
     }
+
     .message-send-btn{
         float:right;
         margin-right: 20px;
@@ -128,14 +102,17 @@
         background-color: #8c7ab7;
         color: #FFFFFF;
     }
+
     .message-send-btn :hover{
 
     }
+
     .message-notif{
         margin-top: 20px;
         text-align: center;
         color: green;
     }
+
     .parallax{
         height: auto !important;
         padding-bottom: 20% !important;
@@ -148,6 +125,7 @@
         justify-content: center;
         flex-wrap: wrap !important;
     }
+
     .box{
         max-width:800px;
         min-width: 300px;
@@ -159,16 +137,63 @@
         margin-top: 100px;
     }
 
+    @media(max-width: 650px) {
 
-    @media (min-width: 650px) and (max-width: 1000px) {
         .container-body{
-
             max-width: 100%;
             display: flex;
             justify-content: center;
             flex-wrap: wrap !important;
             flex-direction: row !important;
         }
+
+        .box{
+            /*margin: 0px 20px 0px 20px;*/
+            max-width:400px;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+            margin-top: 200px;
+        }
+
+        .text-mid{
+            margin-top: 0px;
+
+        }
+
+        .message-box{
+            max-width: 310px;
+            min-width: 250px;
+            display: flex;
+            height:320px;
+            margin:0px;
+        }
+
+        .message-header{
+
+            height: 70px;
+            background-color: #5E478A;
+        }
+
+        .text-white-h1 {
+            line-height: 30px;
+        }
+
+    }
+
+
+    @media (min-width: 650px) and (max-width: 999px) {
+        .container-body{
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap !important;
+            flex-direction: row !important;
+        }
+
         .box{
             max-width:800px;
             min-width: 800px;
@@ -179,10 +204,11 @@
             align-items: center;
             margin-top: 200px;
         }
+
         .text-mid{
             margin-top: 0px;
-
         }
+
     }
 
     @media (min-width: 1000px) and (max-width: 1400px)  {
@@ -241,7 +267,7 @@
             <div class="nathan-fletcher" style="cursor: pointer;">
                 <img src="<?= base_url() ?>front_assets/images/honorees/Nathan-Fletcher_Portrait.jpg" class="photo-box"><br>
             </div>
-            <br>
+            <br><br>
             <div class="text-white">
                 <a class="nathan-fletcher" style="cursor: pointer"><h3 class="text-white-h1">Chair Nathan Fletcher</h3>
                 </a>
@@ -321,7 +347,7 @@
                 $.post(url,{'message':message,'recepient':recepient},function(success){
                     if(success.data=="success"){
                         $('.message-1').val(" ");
-                        $('.notif-1').html('Message successfully sent!');
+                        $('.notif-1').html('Message successfully sent!').show();
                     }
                 },'json');
             }
@@ -343,7 +369,7 @@
                 $.post(url,{'message':message,'recepient':recepient},function(success){
                     if(success.data=="success"){
                         $('.message-2').val(" ");
-                        $('.notif-2').html('Message successfully sent!');
+                        $('.notif-2').html('Message successfully sent!').show();
                     }
                 },'json');
             }
