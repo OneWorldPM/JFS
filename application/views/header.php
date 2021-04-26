@@ -239,6 +239,13 @@ else
                     line-height: 0;
                 }
 
+                .collapse ul{
+                    height: 40px !important;
+                }
+                .nav-button{
+                    margin-top: 50px !important;
+                }
+
             }
 
             @media screen and (max-width: 493px) {
@@ -249,6 +256,15 @@ else
                 .logo2 img {
                     width: 115px;
                 }
+
+                .collapse ul{
+                    height: 40px !important;
+                }
+
+                .nav-button{
+                    margin-top: 50px !important;
+                }
+
             }
 
             #briefcase, #resource_display_status {
@@ -450,7 +466,7 @@ else
                                             <li><a href="<?=base_url().'home'?>"class="hoverThemeColour">LOBBY</a></li>
                                         </ul>
                                     <?php }?>
-                                    <ul class="main-menu nav navbar-nav navbar-left " >
+                                    <ul class="main-menu nav navbar-nav navbar-left nav-button" >
                                         <li><a href="https://www.jfssd.org/supportjfs" target="_blank" class="hoverThemeColour"><img  id="button-support" src="<?= base_url()?>front_assets/images/Support_JFS_Button.png" style="max-width: 150px;height: 50px; "></a></li>
                                     </ul>
                                 </nav>
