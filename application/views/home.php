@@ -9,30 +9,32 @@
         vertical-align: middle;
     }
     .icons{
-        font-size: 110px ;
-        min-font-size: 50px;
+        font-size: 50px ;
+        min-font-size: 30px;
     }
 
     .box-home {
         border-radius: 30px;
-        background-color: rgba(250, 250, 250, 0.8);
         border-color: #FFFFFF !important;
         border-width: 3pt !important;
         border-style: solid;
-        max-width: 190px;
-        min-width: 170px;
-        min-height: 210px;
-        max-height: 180px;
+        max-width: 130px;
+        min-width: 110px;
+        min-height: 100px;
+        max-height: 120px;
         padding: unset;
         margin-top: 100px;
         flex-wrap: wrap;
+        background-color: #674ea0e0;
+        padding: unset;
     }
 
-
-    a:hover {
-        background-color: #FFFFFF !important;
-        color:#FFFFFF !important;
+    .text-box{
+        margin-top: -10px;
+        color: #FFFFFF;
     }
+
+ 
 
 
     .fa {
@@ -43,119 +45,66 @@
         margin-bottom: 10px;
     }
 
+
+    body{
+        height: 100%;
+    }
+
+
+    .parallax
+    {
+        padding-top: unset;
+        height: 100%;
+    }
+
+    .banner2{
+
+        width: 100%;
+    }
+
+    .row{
+        display: flex;
+        justify-content: center;
+    }
+
     @media (min-width: 400px) and (max-width: 768px) {
 
-        .row{
-            justify-content: center;
-            min-width: 300px;
-            max-width: 768px;
-            height: 100%;
+        #home_first_section{
+            height: 590px;
         }
-        .parallax
-        {
-            padding-bottom: 50%;
-            height: 100%;
+        .col-md-1{
+            margin: 0px auto;
         }
-        .banner2 img{
-            justify-content: center;
-            margin-top: 250px;
-            min-width: 250px;
-            max-width: 600px;
-            min-height: 200px;
-            max-height: 250px;
-
+        .col-md-1{
+            display: flex;
+            flex-wrap: wrap;
         }
-        .col-md-12{
-            width: 100%;
+        .box-home {
+            flex-wrap: wrap;
         }
 
     }
     
      @media (min-width: 768px) and (max-width: 1000px)  {
 
-         .box-home {
-             border-radius: 30px;
-             background-color: rgba(250, 250, 250, 0.8);
-             border-color: #FFFFFF !important;
-             border-width: 3pt !important;
-             border-style: solid;
-             max-width: 250px;
-             min-width: 190px;
-             min-height: 180px;
-             max-height: 250px;
-             margin-left:30px;
-             padding: unset;
+         #home_first_section{
+             height: 590px;
          }
-         .icons{
-             font-size: 135px ;
-             min-font-size: 70px;
+         .col-md-1{
+             margin: 0 auto;
          }
 
-         .row{
-             justify-content: center;
-             min-width: 100%;
-             max-width: 100%;
-             height: 100%;
-         }
-         .banner2 img{
-             justify-content: center;
-             margin-top: 250px;
-             min-width: 250px;
-             max-width: 800px;
-             min-height: 200px;
-             max-height: 300px;
 
-         }
-        body{
-            height: 100%;
-            width: 100%;
-        }
-         .parallax
-         {
-             padding-bottom: 300px;
-             height: 100%;
-         }
-
-    }
+     }
 
     @media (min-width: 1000px) and (max-width: 1400px)  {
         #home_first_section{
             height: 590px;
+        }
+        .col-md-1{
+            margin: 20px;
+        }
 
-        }
-        .box-home {
-            border-radius: 30px;
-            background-color: rgba(250, 250, 250, 0.8);
-            border-color: #FFFFFF !important;
-            border-width: 3pt !important;
-            border-style: solid;
-            max-width: 350px;
-            min-width: 170px;
-            min-height: 210px;
-            max-height: 180px;
-            padding: unset;
-        }
-        .icons{
-            font-size: 110px ;
-            min-font-size: 70px;
-        }
-        .banner2 img{
-            margin-top: 100px;
-            min-width: 950px;
-            max-width: 950px;
-            min-height: 200px;
-            max-height: 300px;
-
-        }
-        h3{
-            font-size: 18px ;
-            min-font-size: 30px;
-        }
-        .parallax
-        {
-            padding-bottom: 50%;
-            height: 100%;
-        }
     }
 
     @media (min-width: 1400px) and (max-width: 1600px)  {
@@ -166,6 +115,10 @@
         {
             padding-bottom: 50%;
             height: 100%;
+        }
+
+        .col-md-1{
+            margin: 20px;
         }
 
     }
@@ -179,6 +132,11 @@
             padding-bottom: 50%;
             height: 100%;
         }
+
+        .col-md-1{
+            margin: 20px;
+        }
+
     }
 
     @media (min-width: 1800px) and (max-width: 2200px)  {
@@ -234,27 +192,7 @@
             height: 100%;
         }
     }
-    .box-home{
-        background-color: #674ea0e0;
-        padding: unset;
-    }
 
-    body{
-        height: 100%;
-    }
-
-
-    .parallax
-    {
-        padding-top: unset;
-        height: 100%;
-    }
-    h3{
-        color: #FFFFFF;
-    }
-    .banner2{
-        margin-top: -140px;
-    }
 </style>
 
 <section class="parallax" style="background-image: url(<?= base_url() ?>front_assets/images/Site_Background_02_Welcome_Lobby.jpg);">
@@ -269,60 +207,60 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center " >
-                        <div class="col-md-2 col-sm-12 col-md-offset-1">
+                    <div class="row justify-content-center" >
+                        <div class="col-md-1 col-sm-12 ">
                             <div style="text-align: center !important;">
                                 <a class="" href="<?=base_url().'sessions/attend'?>">
                                     <div class="col-lg box-home ml-5 mr-5 p-5 text-center" >
                                         <span class="fas fa-chalkboard-teacher icons" ></span>
                                         <br>
                                         <br>
-                                        <span><h3>Main Event</h3></span>
+                                        <span><p class="text-box">Main Event</p></span>
                                     </div>
                                 </a>
                             </div>
                         </div>
 
-                        <div class="col-md-2 col-sm-12">
+                        <div class="col-md-1 col-sm-12">
                             <a class="" href="<?= base_url().'sessions/attend_vip_meet'?>" id="vip-meet-greet-icon">
                                 <div class="col-lg box-home ml-5 mr-5 p-5 text-center">
                                     <span class="fa fa-handshake icons"  ></span>
                                     <br>
                                     <br>
-                                    <span><h3>VIP Meet and Greet</h3></span>
+                                    <span><p class="text-box">VIP Meet and Greet</p></span>
                                 </div>
                             </a>
                         </div>
 
-                        <div class="col-md-2 col-sm-12">
+                        <div class="col-md-1 col-sm-12">
                             <a class="" href="<?= base_url().'underwriters'?>"">
                             <div class="col-lg box-home ml-5 mr-5 p-5 text-center">
                                 <span class="fa fa-hand-holding-heart icons"  ></span>
                                 <br>
                                 <br>
-                                <span><h3>Underwriters</h3></span>
+                                <span><p class="text-box">Underwriters</p></span>
                             </div>
                             </a>
                         </div>
 
-                        <div class="col-md-2 col-sm-12">
+                        <div class="col-md-1 col-sm-12">
                             <a class="" href="<?= base_url().'honorees'?>">
                                 <div class="col-lg box-home ml-5 mr-5 p-5 text-center">
                                     <span class="fa fa-award icons"  ></span>
                                     <br>
                                     <br>
-                                    <span><h3>Honorees</h3></span>
+                                    <span><p class="text-box">Honorees</p></span>
                                 </div>
                             </a>
                         </div>
 
-                        <div class="col-md-2  col-sm-12">
+                        <div class="col-md-1  col-sm-12">
                             <a class="" href="https://bit.ly/3afPDTB" target="_blank">
                                 <div class="col-lg box-home ml-5 mr-5 p-5 text-center ">
                                     <span class="fa fa-gavel icons"  ></span>
                                     <br>
                                     <br>
-                                    <span><h3>Auction</h3></span>
+                                    <span><p class="text-box">Auction</p></span>
                                 </div>
                             </a>
                         </div>
