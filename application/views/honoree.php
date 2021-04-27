@@ -297,8 +297,8 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="name" style="text-align: center; font-size: 30px;font-family: Lato"></div>
-            <div class="modal-body" style="text-align: center; font-size: 15px;font-family: Lato">
+            <div class="name" style="text-align: center; font-size: 30px;"></div>
+            <div class="modal-body" style="text-align: center; font-size: 15px;">
 
             </div>
             <div class="modal-footer">
@@ -382,21 +382,14 @@
 
             $('#honoree-modal').modal('show');
             $('#honoree-modal .name').html('Caryl Lees Witte');
-            $('#honoree-modal .modal-body').html(" Caryl has spent her lifetime supporting those in the community who have faced behavioral health"+
-                "challenges or been marginalized. As part of Caryl’s commitment to behavioral health, she has been a"+
-            "staunch advocate for the behavioral health community and served as the lead underwriter for the BHC"+
-            "Luncheon for the past 15 years.");
+            $('#honoree-modal .modal-body').html(" We are pleased to recognize Caryl Lees Witte for her dedication to the Behavioral Health Committee and Jewish Family Service of San Diego with the Linda Janon Behavioral Health Champion Award. Caryl has spent her lifetime supporting those in the community who have faced behavioral health challenges or been marginalized. As part of Caryl’s commitment, she has been a staunch advocate for the behavioral health community and served as the lead underwriter for the BHC Luncheon for the past 15 years. Please join us in thanking her for her commitment to raising awareness around this important topic.");
         });
 
         $('.nathan-fletcher').on('click',function(){
 
             $('#honoree-modal').modal('show');
             $('#honoree-modal .name').html('Nathan Fletcher');
-            $('#honoree-modal .modal-body').html("Thank you for demonstrating devotion to building awareness and support for those in our community"+
-            "facing behavioral health challenges. As Chair of the San Diego County Board of Supervisors, he is leading"+
-            "the effort to confront COVID-19 and ensure we build back better through the recovery. He is also"+
-            "focused on transforming our approach to behavioral health, making substantial investments in our"+
-            "mental health and drug treatment programs.");
+            $('#honoree-modal .modal-body').html("We are honored to recognize Nathan Fletcher, Supervisor of San Diego’s Fourth District, with the Behavioral Health Hero Award. As Chair of the San Diego County Board of Supervisors, he is leading the effort to confront COVID-19 and transform San Diego’s approach to behavioral health by making substantial investments in our mental health and drug treatment programs. His vision is to fix a fragmented system by building a patient-centered, care coordination system that ensures those in need get the right care, at the right time and most importantly get the right outcomes to improve their lives. Please join us in thanking Nathan for his demonstrated commitment to building awareness and support for community members facing behavioral health challenges.");
         });
     });
 </script>

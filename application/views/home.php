@@ -11,6 +11,7 @@
     .icons{
         font-size: 50px ;
         min-font-size: 30px;
+        margin-top: 15px;
 
     }
 
@@ -32,7 +33,7 @@
     }
 
     .text-box{
-        margin-top: -10px;
+        margin-top: -20px;
         color: #FFFFFF;
     }
 
@@ -358,7 +359,7 @@
                                     <span class="fa fa-handshake icons"  ></span>
                                     <br>
                                     <br>
-                                    <span><p class="text-box">VIP Meet and Greet</p></span>
+                                    <span><p class="text-box">VIP Meet & Greet</p></span>
                                 </div>
                             </a>
                         </div>
