@@ -1,4 +1,4 @@
-<?php //print_r($zoom_link);exit;?>
+<?php //print_r($sessions);exit;?>
 <style>
     .progress-bar {
         height: 100%;
@@ -138,6 +138,7 @@
 <script type="text/javascript">
 
     var vip_type = "<?=$this->session->userdata('vipType')?>";
+    var vip_session = "<?=$sessions->vip_session?>";
     var session_id = "<?=$sessions->sessions_id?>";
     var zoom_link ="<?=(isset($zoom_link))?$zoom_link:''?>";
 
@@ -145,7 +146,7 @@
         if ($("#time_second").val() <= 0) {
             timer();
         } else {
-            if(vip_type == "0" ){
+            if(vip_type != 1 && vip_session == 1){
                 window.location = "<?=base_url().'home'?>";
                 return false;
             }

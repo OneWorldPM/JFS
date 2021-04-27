@@ -56,7 +56,7 @@ class Sessions extends CI_Controller {
         $this->load->view('footer');
     }
 
-    public function view($sessions_id) {
+    public function view($sessions_id=2) {
 
         $this->load->library('MobileDetect');
         $this->MobileDetect = new MobileDetect();
@@ -323,40 +323,19 @@ class Sessions extends CI_Controller {
         echo $output;
     }
 
-    public function attend($sessions_id="") {
-        if(isset($sessions_id) && !empty($sessions_id)){
-            $headerData['session_id'] = $sessions_id;
-            $data["sessions"] = $this->objsessions->viewSessionsData($sessions_id);
-            $this->load->view('header', $headerData);
-            $this->load->view('view_attend', $data);
-            $this->load->view('footer');
-        }
-        else{
-        $this->db->select('*');
-        $this->db->from('sessions');
-        $this->db->where('sessions_id=',"2");
-        $session=$this->db->get();
+    public function attend($sessions_id=2) {
 
-        if($session->num_rows() > 0){
-            $sessions_id=($session->result()[0]->sessions_id);
-            $vip_session=($session->result()[0]->vip_session);
-            if($vip_session=="1" && $this->session->userdata('vipType')=="0"){
-                redirect(base_url().'home');
-                die;
-            }
-        }else{
+        $headerData['session_id'] = $sessions_id;
+        $data["sessions"] = $this->objsessions->viewSessionsData($sessions_id);
+
+        if($data["sessions"]->vip_session == 1 && $this->session->userdata('vipType') == 1){
             redirect(base_url().'home');
             die;
         }
-        $headerData['session_id'] = $sessions_id;
-
-        $data["sessions"] = $this->objsessions->viewSessionsData($sessions_id);
 
         $this->load->view('header', $headerData);
         $this->load->view('view_attend', $data);
         $this->load->view('footer');
-
-        }
     }
 
 
