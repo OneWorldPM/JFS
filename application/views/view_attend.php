@@ -140,7 +140,7 @@
     var vip_type = "<?=$this->session->userdata('vipType')?>";
     var vip_session = "<?=$sessions->vip_session?>";
     var session_id = "<?=$sessions->sessions_id?>";
-    var zoom_link ="<?=(isset($zoom_link))?$zoom_link:''?>";
+    var zoom_link ="<?=(isset($sessions->zoom_link))?$sessions->zoom_link:''?>";
 
     $(document).ready(function () {
         if ($("#time_second").val() <= 0) {
@@ -167,6 +167,9 @@
     });
     // console.log($("#time_second").val())
     var upgradeTime = $("#time_second").val();
+    <?php if (isset($_GET['testing'])): ?>
+        upgradeTime = 5;
+    <?php endif; ?>
     var seconds = upgradeTime;
     function timer() {
         var days = Math.floor(seconds / 24 / 60 / 60);

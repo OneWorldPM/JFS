@@ -1,7 +1,7 @@
 <?php
 if (isset($_GET['testing']))
 {
-    echo"<pre>"; print_r(themeColour(79)); exit('</pre>');
+    //echo"<pre>"; print_r(themeColour(79)); exit('</pre>');
 }
 
 
