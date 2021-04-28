@@ -49,7 +49,9 @@
             var socketServer = "https://socket.yourconference.live:443";
             let socket = io(socketServer);
             socket.on('serverStatus', function (data) {
+                let onlineListAppName = socket_app_name+"_online_users";
                 socket.emit('addMeToActiveListPerApp', {'user_id':user_id, 'app': socket_app_name, 'room': socket_active_user_list});
+                socket.emit('addMeOnlineListPerApp', {'user_id':user_id, 'app': onlineListAppName});
             });
 
             $(window).on("blur focus", function(e) {
