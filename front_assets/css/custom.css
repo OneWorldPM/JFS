@@ -47,7 +47,7 @@
     }
 }
 
-.blink-element{
+.blink-element {
     animation: blinker 1s linear infinite;
 }
 
@@ -301,7 +301,7 @@
     margin: 1px auto 0 auto;
 }
 
-.admin-to-user-text{
+.admin-to-user-text {
     color: white;
     background-color: #df941f;
     text-align: left;
@@ -314,7 +314,7 @@
     margin-right: 40px;
 }
 
-.user-to-admin-text{
+.user-to-admin-text {
     color: white;
     background-color: #1f8edf;
     text-align: right;
@@ -325,4 +325,94 @@
     padding-right: 12px;
     border-radius: 15px;
     margin-left: 50px;
+}
+
+#mainMenu2 {
+    margin-right: 100px;
+    margin-top: 20px !important;
+}
+
+
+@media screen and (max-width: 1290px) {
+    #header-wrap {
+        padding: 0 !important;
+    }
+
+    #header-wrap #button-support {
+        margin-top: -25px !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #header-wrap #logo img {
+        width: 70px !important;
+        height: 100px !important;
+        object-fit: contain;
+    }
+
+    #header-wrap #button-support {
+        width: 100px !important;
+        object-fit: contain;
+    }
+
+    #header-wrap .nav-button {
+        margin-top: 0 !important;
+    }
+
+    #mainMenu2 ul li a {
+        font-size: 11px !important;
+    }
+
+    #mainMenu2 ul li {
+        margin-right: 0px !important;
+    }
+
+    #mainMenu2 .nav {
+        width: max-content !important;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    #header-wrap #logo img {
+        padding: 0 !important;
+        width: 65px !important;
+        height: 55px !important;
+    }
+
+    #logo {
+        height: 60px !important;
+        margin-left: 20px;
+    }
+
+    .nav-main-menu-responsive {
+        margin-top: 12px;
+        margin-right: 20px;
+    }
+
+    #header {
+        padding-bottom: 0 !important;
+    }
+
+    #header .navbar-collapse {
+        overflow: hidden !important;
+    }
+
+    #mainMenu2 .nav {
+        height: 50px !important;
+        width: 100% !important;
+        text-align: center;
+        border-top: 1px solid #746797 !important;
+        border-radius: 0 !important;
+        padding-top: 10px;
+    }
+
+    #mainMenu2 {
+        margin-top: 0 !important;
+    }
+
+    #header .container {
+        padding: 0;
+    }
+
 }

@@ -62,6 +62,14 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+    .post-image{
+        margin-bottom: 0 !important;
+    }
+    .post-image img{
+        width: 100%;
+        height: 210px !important;
+        object-fit: contain;
+    }
 
 </style>
 <section class="parallax">
@@ -114,7 +122,7 @@
 
                                         ?>
                                         <div class="post-item">
-                                            <div class="post-image col-md-3 m-t-20"> 
+                                            <div class="post-image col-md-3 m-t-20">
                                                 <a href="<?= base_url() ?>sessions/attend/<?= $val->sessions_id ?>" id="session-attend" data-vip_session="<?=$val->vip_session?>"> <?php if ($val->sessions_photo != "") { ?> <img alt="" src="<?= base_url() ?>uploads/sessions/<?= $val->sessions_photo ?>"> <?php } else { ?>  <img alt="" src="<?= base_url() ?>front_assets/images/session_avtar.jpg"> <?php } ?>  </a>
                                             </div>
                                             <div class="post-content-details col-md-9 m-t-30">
