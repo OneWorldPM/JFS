@@ -405,7 +405,7 @@ else
 
                         <!--NAVIGATION-->
                         <div class="navbar-collapse collapse main-menu-collapse navigation-wrap" id="nav-drop"style="margin-right: 10px">
-                            <div class="container" style="text-transform: uppercase;">
+                            <div class="container" style="text-transform: uppercase;width: 101%;">
                                 <nav id="mainMenu2" class="main-menu mega-menu" style="margin-top: 10px;">
                                     <?php
                                     if ($this->session->userdata('cid') != "") {
@@ -441,6 +441,15 @@ else
                                         <li><a href="<?=base_url().'login/logout'?>" id="logout" class="hoverThemeColour">LOGOUT</a></li>
                                     </ul>
                                     <?php }?>
+
+                                    <ul class="main-menu nav navbar-nav navbar-right">
+                                        <li><button class="live-support-open-button btn btn-info" onclick="openLiveSupportChat()" style="background-color: #<?=$themeColour?>;padding: 6px 7px;border-color: #f3f6f7;"><i class="far fa-life-ring"></i> Live Tech Support</button></li>
+                                    </ul>
+
+                                    <ul class="main-menu nav navbar-nav navbar-right">
+                                        <li><a href="mailto:victoriap@jfssd.org?subject=JFS Meeting Donation and Information Request" target="_self" class="hoverThemeColour">JFS INFO</a></li>
+                                    </ul>
+
                                     <ul class="main-menu nav navbar-nav navbar-right">
                                         <li><a href="https://yourconference.live/support" target="_blank" class="hoverThemeColour">HELP</a></li>
                                     </ul>
