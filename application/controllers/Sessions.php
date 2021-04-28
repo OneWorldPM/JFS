@@ -328,7 +328,7 @@ class Sessions extends CI_Controller {
         $headerData['session_id'] = $sessions_id;
         $data["sessions"] = $this->objsessions->viewSessionsData($sessions_id);
 
-        if($data["sessions"]->vip_session == 1 && $this->session->userdata('vipType') == 1){
+        if($data["sessions"]->vip_session == 1 && $this->session->userdata('vipType') != 1){
             redirect(base_url().'home');
             die;
         }
@@ -340,10 +340,11 @@ class Sessions extends CI_Controller {
 
 
     public function attend_vip_meet() {
+        $today = date('Y-m-d');
         $time_now = date('H:i:s');
         $this->db->select('*');
         $this->db->from('sessions');
-        $this->db->where('sessions_id =', "3");
+        $this->db->where('sessions_id', 3);
         $session=$this->db->get();
         if($session->num_rows() > 0){
 
@@ -351,6 +352,7 @@ class Sessions extends CI_Controller {
             $zoom_link = ($session->result()[0]->zoom_redirect_url);
             $zoom_redirect = ($session->result()[0]->zoom_redirect);
             $time_slot =  ($session->result()[0]->time_slot);
+            $session_day =  ($session->result()[0]->sessions_date);
             $sessions_date =  ($session->result()[0]->sessions_date);
             $sessions_id=($session->result()[0]->sessions_id);
 
@@ -360,7 +362,7 @@ class Sessions extends CI_Controller {
                 die;
             }
 
-            if($zoom_redirect == 1 && $time_slot <= $time_now){
+            if($zoom_redirect == 1 && $session_day == $today && $time_slot <= $time_now){
                 if($zoom_link !== ""){
                     redirect($zoom_link);
                 }
