@@ -266,7 +266,10 @@
                                         Roxy & Mick Fredericks<br>
                                         Kathy & Mark Jones<br>
                                         Sylvia Liwerant<br>
-                                        Sharon & David Wax<br><br>
+                                        Sharon & David Wax<br>
+                                        UC San Diego Health<br>
+                                        <br>
+
 
                                         <b><h4>BESPOKE  $5,000 </h4></b>
                                         Deborah Bucksbaum<br>
@@ -283,7 +286,6 @@
                                         Alan Haubenstock, Brian Haubenstock & Lori Shearer<br>
                                         Karin & Tony Toranto<br>
                                         Emma & Leo Zuckerman<br>
-                                        UC San Diego Health<br>
                                     </div>
                                 </div>
                             </div>
