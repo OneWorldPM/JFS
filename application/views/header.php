@@ -447,7 +447,7 @@ else
                                     </ul>
 
                                     <ul class="main-menu nav navbar-nav navbar-right">
-                                        <li><a href="mailto:victoriap@jfssd.org?subject=JFS Meeting Donation and Information Request" target="_self" class="hoverThemeColour">JFS INFO</a></li>
+                                        <li><a href="mailto:victoriap@jfssd.org?subject=Event Support" target="_self" class="hoverThemeColour">JFS INFO</a></li>
                                     </ul>
 
                                     <ul class="main-menu nav navbar-nav navbar-right">

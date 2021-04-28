@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="close push_notification_close" style="padding: 10px; color: #fff; background-color: #EF5D21; opacity: 1; font-size: 18px; font-weight: 400;" data-dismiss="modal" aria-hidden="true">Close</button>
+                <button type="button" class="close push_notification_close" style="padding: 10px; color: #fff; background-color: #5C4B8C; opacity: 1; font-size: 18px; font-weight: 400;" data-dismiss="modal" aria-hidden="true">Close</button>
             </div>
         </div>
     </div>
@@ -71,66 +71,63 @@
                 $(this).data("prevType", e.type);
             });
 
-        });
-
-        // Active again
-        function resetActive(){
-            socket.emit('userActiveChangeInApp', {"app":socket_app_name, "room":socket_active_user_list, "name":user_name, "userId":user_id, "status":true});
-        }
-        // No activity let everyone know
-        function inActive(){
-            socket.emit('userActiveChangeInApp', {"app":socket_app_name, "room":socket_active_user_list, "name":user_name, "userId":user_id, "status":false});
-        }
-
-
-    });
-</script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        var app_name_main = "<?=getAppName("") ?>";
-        push_notification_admin();
-        //setInterval(push_notification_admin, 2000);
-        socket.on('push_notification_change', (socket_app_name) => {
-            if (socket_app_name == app_name_main)
-                push_notification_admin();
-        });
-        function push_notification_admin()
-        {
-            var push_notification_id = $("#push_notification_id").val();
-
-            $.ajax({
-                url: "<?= base_url() ?>push_notification/get_push_notification_admin",
-                type: "post",
-                dataType: "json",
-                success: function (data) {
-                    if (data.status == "success") {
-                        if (push_notification_id == "0") {
-                            $("#push_notification_id").val(data.result.push_notification_id);
-                        }
-                        if (push_notification_id != data.result.push_notification_id && data.result.session_id == null) {
-                                if (data.result.receiver=="attendee" || data.result.receiver=="both" || data.result.receiver==null){
-                            $("#push_notification_id").val(data.result.push_notification_id);
-                            $('#push_notification').modal('show');
-                            $("#push_notification_message").text(data.result.message);
-                            }
-                        }
-
-                        if (push_notification_id != data.result.push_notification_id && data.result.session_id != null)
-                        {
-                            if (data.result.receiver=="attendee" || data.result.receiver=="both" || data.result.receiver==null){
-                            if (typeof session_id !== 'undefined' && session_id == data.result.session_id)
-                            {
-                                $("#push_notification_id").val(data.result.push_notification_id);
-                                $('#push_notification').modal('show');
-                                $("#push_notification_message").text(data.result.message);
-                            }}
-                        }
-                    } else {
-                        $('#push_notification').modal('hide');
-                    }
-                }
+            var app_name_main = "<?=getAppName("") ?>";
+            push_notification_admin();
+            //setInterval(push_notification_admin, 2000);
+            socket.on('push_notification_change', (socket_app_name) => {
+                if (socket_app_name == app_name_main)
+                    push_notification_admin();
             });
-        }
+
+            // Active again
+            function resetActive(){
+                socket.emit('userActiveChangeInApp', {"app":socket_app_name, "room":socket_active_user_list, "name":user_name, "userId":user_id, "status":true});
+            }
+            // No activity let everyone know
+            function inActive(){
+                socket.emit('userActiveChangeInApp', {"app":socket_app_name, "room":socket_active_user_list, "name":user_name, "userId":user_id, "status":false});
+            }
+
+            function push_notification_admin()
+            {
+                var push_notification_id = $("#push_notification_id").val();
+
+                $.ajax({
+                    url: "<?= base_url() ?>push_notification/get_push_notification_admin",
+                    type: "post",
+                    dataType: "json",
+                    success: function (data) {
+                        if (data.status == "success") {
+                            if (push_notification_id == "0") {
+                                $("#push_notification_id").val(data.result.push_notification_id);
+                            }
+                            if (push_notification_id != data.result.push_notification_id && data.result.session_id == null) {
+                                if (data.result.receiver=="attendee" || data.result.receiver=="both" || data.result.receiver==null){
+                                    $("#push_notification_id").val(data.result.push_notification_id);
+                                    $('#push_notification').modal('show');
+                                    $("#push_notification_message").text(data.result.message);
+                                }
+                            }
+
+                            if (push_notification_id != data.result.push_notification_id && data.result.session_id != null)
+                            {
+                                if (data.result.receiver=="attendee" || data.result.receiver=="both" || data.result.receiver==null){
+                                    if (typeof session_id !== 'undefined' && session_id == data.result.session_id)
+                                    {
+                                        $("#push_notification_id").val(data.result.push_notification_id);
+                                        $('#push_notification').modal('show');
+                                        $("#push_notification_message").text(data.result.message);
+                                    }}
+                            }
+                        } else {
+                            $('#push_notification').modal('hide');
+                        }
+                    }
+                });
+            }
+
+        });
+
     });
 </script>
 
