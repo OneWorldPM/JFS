@@ -32,8 +32,9 @@
         margin-left: 10px;
         font-size: 18px;
     }
+
     .logos{
-        margin-top: 15px;
+        margin-top: 4px;
         margin-bottom: 0px;
         margin-right: 0px;
         padding: 2px;
@@ -92,6 +93,17 @@
             height: auto;
 
         }
+        .logos{
+            margin-top: 4px;
+            margin-bottom: 0px;
+            margin-right: 0px;
+            padding: 2px;
+            margin-left:40px;
+            max-width:150px;
+            max-height:75px;
+            display: inline;
+        }
+
         .col{
             display: flex;
             justify-content: center;
@@ -107,6 +119,13 @@
         }
         .flex-container{
             margin-right: 10px;
+        }
+        .text{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+            font-size: 15px;
         }
     }
 
@@ -264,6 +283,7 @@
                                         Alan Haubenstock, Brian Haubenstock & Lori Shearer<br>
                                         Karin & Tony Toranto<br>
                                         Emma & Leo Zuckerman<br>
+                                        UC San Diego Health<br>
                                     </div>
                                 </div>
                             </div>
@@ -273,6 +293,7 @@
                                         <a href="https://careasy.org/home" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/CARS_Logo_Full_Horz_CMYK-01.jpg" class="logos"></a>
                                         <a href="https://www.century21.com/real-estate-agent/profile/caryl-lees-witte-P10304096" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/CLW.jpg" class="logos"></a>
                                         <a href="https://www.ajg.com" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/Gallagher-logo-400x204.png" class="logos"></a>
+                                        <a href="" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/UCSDHealth-CMYK.jpg" class="logos"></a>
                                         <a href="https://capitalcityautoauction.com/" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/Capital City Auto Auction logo - color.pdf.jpg" class="logos"></a>
                                         <a href="https://www.cnb.com/" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/CNB-RBC Integrated Logo_RGB.jpg" class="logos"></a>
                                         <a href="https://www.pacificsothebysrealty.com/agent/621-a-2492-4030139/liz-coden" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/Liz Coden.jpg" class="logos"></a>
@@ -280,16 +301,16 @@
                                         <a href="https://www.lourdmurray.com/" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/LM Delphi Stacked Grey Navy.jpg" class="logos"></a>
                                         <a href="https://www.century21.com/real-estate-agent/profile/nancy-beck-P25127112" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/NancyBeck_bannerhighresolution.jpg" class="logos"></a>
                                         <a ><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/MollysAngel.jpg" class="logos"></a>
-                                        <a href="https://www.comfortkeepers.com/"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/CK_logo_vert_EHS.png" class="logos"></a>
+                                        <a href="https://www.comfortkeepers.com/"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/CK_logo_vert_EHS.png" class="logos" style="margin-left: 90px"></a>
                                         <a href="https://centurawealth.com/" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/CenturaWealthAdvisoryLogo_ontransparentbackground.png" class="logos"></a>
                                         <a href="https://www.manheim.com/" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/manheim-logo-400x98.jpg" class="logos"></a>
                                         <a href="https://www.pathfinderfunds.com/" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/pathfinder-logo-tagline (1).jpg" class="logos"></a>
-                                        <a href="https://www.sdfoundation.org/" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/sdf.jpg" class="logos"></a>
-                                        <a href="https://www.seacrestvillage.org/" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/SFlogo2016.jpg" class="logos"></a>
+                                        <a href="https://www.sdfoundation.org/" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/sdf.jpg" class="logos" style="margin-left: 30px"></a>
                                         <a href="https://www.seacrestvillage.org/" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/SVRClogo_purple_19.jpg" class="logos"></a>
-                                        <a href="https://www.thompsonsearch.com/" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/Thompson.png" class="logos"></a>
+                                        <a href="https://www.seacrestvillage.org/" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/SFlogo2016.jpg" class="logos" style="margin-left: 20px"></a>
+                                         <a href="https://www.thompsonsearch.com/" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/Thompson.png" class="logos"></a>
                                         <a href="https://jcfsandiego.org/" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/jewish-community-foundation-400x267.jpg" class="logos"></a>
-                                        <a href="https://sycuantribe.com/" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/Sycuan-logo-338x400.jpg" class="logos"></a>
+                                        <a href="https://sycuantribe.com/" target="_blank"><img src="<?= base_url() ?>front_assets/images/underwriters/Underwritter_Main_Logos/Sycuan-logo-338x400.jpg" class="logos" style="margin-left: 40%; max-height: 100px"></a>
                                     </div>
                                 </div>
                             </div>
