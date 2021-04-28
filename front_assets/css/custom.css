@@ -404,11 +404,44 @@
         text-align: center;
         border-top: 1px solid #746797 !important;
         border-radius: 0 !important;
-        padding-top: 10px;
+        padding-top: 15px;
     }
 
     #mainMenu2 {
         margin-top: 0 !important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mainMenu2 ul:nth-last-of-type(1){
+        order: -9;
+    }
+
+    #mainMenu2 ul:nth-last-of-type(2){
+        order: -8;
+    }
+
+    #mainMenu2 ul:nth-last-of-type(4){
+        order: -7;
+    }
+
+    #mainMenu2 ul:nth-last-of-type(5){
+        order: -6;
+    }
+
+    #mainMenu2 ul:nth-last-of-type(6){
+        order: -5;
+    }
+
+    #mainMenu2 ul:nth-last-of-type(7){
+        order: -4;
+    }
+
+    #mainMenu2 ul:nth-last-of-type(8){
+        order: -3;
+    }
+    #mainMenu2 ul:nth-last-of-type(9){
+        order: 1;
     }
 
     #header .container {
