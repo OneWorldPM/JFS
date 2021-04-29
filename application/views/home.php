@@ -429,7 +429,7 @@
                 Swal.fire({
                     icon: 'info',
                     title: 'Notification',
-                    html: 'This Meet and Greet Session is for VIP attendees only. To upgrade your ticket, please contact <a href="mailto:victoriap@jfssd.org" style="color: #00008c !important;">victoriap@jfssd.org</a> before 5:00pm on April 28th, 2021.',
+                    html: 'This Meet and Greet Session is for VIP attendees only. Questions? Please contact Victoria at <a href="mailto:victoriap@jfssd.org" style="color: #00008c !important;">victoriap@jfssd.org</a>',
                 })
             }else{
                 window.open($(this).attr('href'),"_blank");
