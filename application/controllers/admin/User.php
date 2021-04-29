@@ -274,4 +274,9 @@ class User extends CI_Controller
         }
     }
 
+    public function allUsersJson()
+    {
+        echo json_encode($this->muser->getUserData());
+    }
+
 }
