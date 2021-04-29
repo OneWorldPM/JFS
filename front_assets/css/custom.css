@@ -328,18 +328,58 @@
 }
 
 #mainMenu2 {
-    margin-right: 100px;
-    margin-top: 20px !important;
+    margin-top: 25px;
+    padding-right: 15px;
+}
+#logo{
+    margin-left: 15px;
 }
 
+#logo img{
+    width: 110px;
+    height: 100px;
+    padding-bottom: 0 !important;
+}
+#mainMenu2 #button-support{
+    max-width: 150px;
+    height: 50px;
+}
+
+#mainMenu2 .live-support-open-button{
+    padding: 6px 7px;
+    margin-top: -4px;
+}
+#header-wrap>.container{
+    padding: 0 !important;
+}
+
+@media screen and (max-width: 1400px) {
+    #mainMenu2 #button-support{
+        max-width: 100px;
+        height: 30px;
+        margin-top: -15px;
+    }
+
+    #header .container{
+        padding: 0 10px;
+        margin: 0;
+        width: 100%;
+    }
+
+    #mainMenu2 ul li a {
+        font-size: 11px !important;
+    }
+}
 
 @media screen and (max-width: 1290px) {
     #header-wrap {
         padding: 0 !important;
     }
 
-    #header-wrap #button-support {
-        margin-top: -25px !important;
+    #logo img{
+        margin-top: 10px;
+        width: 90px !important;
+        height: 60px !important;
     }
 }
 
@@ -348,6 +388,8 @@
         width: 70px !important;
         height: 100px !important;
         object-fit: contain;
+        margin-top: -10px;
+
     }
 
     #header-wrap #button-support {
@@ -372,12 +414,47 @@
     }
 }
 
+@media screen and (max-width: 1162px) {
+    #mainMenu2 .live-support-open-button{
+        margin-top: 0px;
+        font-size: 11px;
+    }
+    #mainMenu2 ul li a{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+
+@media screen and (max-width: 1035px) {
+    #header-wrap #button-support{
+        width: 90px !important;
+    }
+    #logo{
+        margin-left: 5px;
+    }
+    #mainMenu2{
+        padding-right: 10px;
+    }
+    #mainMenu2 .live-support-open-button{
+        padding: 5px 3px;
+    }
+}
+
+
+@media screen and (max-width: 1003px) {
+    #mainMenu2 ul li a {
+        font-size: 10.5px !important;
+    }
+}
+
 
 @media screen and (max-width: 991px) {
     #header-wrap #logo img {
         padding: 0 !important;
-        width: 65px !important;
+        width: 85px !important;
         height: 55px !important;
+        margin-top: 5px;
     }
 
     #logo {
@@ -411,6 +488,7 @@
         margin-top: 0 !important;
         display: flex;
         flex-direction: column;
+        padding-right: 0;
     }
 
     #mainMenu2 ul:nth-last-of-type(1){
@@ -443,9 +521,24 @@
     #mainMenu2 ul:nth-last-of-type(9){
         order: 1;
     }
+    #mainMenu2 .main-event{
+        order: -7;
+    }
 
     #header .container {
         padding: 0;
+    }
+
+    #mainMenu2 .live-support-open-button{
+        margin-top: -3px;
+    }
+
+    #mainMenu2 .nav{
+        padding-top: 10px;
+    }
+
+    #mainMenu2 .live-support-open-button{
+        margin-top: 1px;
     }
 
 }

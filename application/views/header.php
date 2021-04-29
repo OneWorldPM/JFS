@@ -47,7 +47,7 @@ else
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600%7CRaleway:100,300,600,700,800" rel="stylesheet" type="text/css" />
 
         <!-- CSS CUSTOM STYLE -->
-        <link rel="stylesheet" type="text/css" href="<?= base_url() ?>front_assets/css/custom.css?ver=11" media="screen" />
+        <link rel="stylesheet" type="text/css" href="<?= base_url() ?>front_assets/css/custom.css?ver=12" media="screen" />
         <!--VENDOR SCRIPT-->
         <script src="<?= base_url() ?>front_assets/vendor/jquery/jquery-1.11.2.min.js"></script>
         <script src="<?= base_url() ?>front_assets/vendor/plugins-compressed.js"></script>
@@ -195,9 +195,6 @@ else
                 #header-wrap {
                     padding: 0px 0px;
 
-                }
-                #button-support{
-                    margin-top: -60px !important;
                 }
 
                 #header .container {
@@ -368,7 +365,7 @@ else
                             ?>
                             <div id="logo" style="margin-right: 7px;">
                                 <p class="logo" data-dark-logo="<?= base_url() ?>front_assets/images/Header_Logos_JFS.png" style="margin-top: 2px; cursor: auto">
-                                    <img src="<?= base_url() ?>front_assets/images/Header_Logos_JFS.png" alt="JFS Logo" style="width: 110px;height: 100px">
+                                    <img src="<?= base_url() ?>front_assets/images/Header_Logos_JFS.png" alt="JFS Logo">
 
                                 </p>
 
@@ -404,9 +401,9 @@ else
                         <!--END: SHOPPING CART -->
 
                         <!--NAVIGATION-->
-                        <div class="navbar-collapse collapse main-menu-collapse navigation-wrap" id="nav-drop"style="margin-right: 10px">
-                            <div class="container" style="text-transform: uppercase;width: 101%;">
-                                <nav id="mainMenu2" class="main-menu mega-menu" style="margin-top: 10px;">
+                        <div class="navbar-collapse collapse main-menu-collapse navigation-wrap" id="nav-drop">
+                            <div class="container" style="text-transform: uppercase;width: 100%;">
+                                <nav id="mainMenu2" class="main-menu mega-menu">
                                     <?php
                                     if ($this->session->userdata('cid') != "") {
                                         $profile_data = $this->common->get_user_details($this->session->userdata('cid'));
@@ -443,7 +440,7 @@ else
                                     <?php }?>
 
                                     <ul class="main-menu nav navbar-nav navbar-right">
-                                        <li><button class="live-support-open-button btn btn-info" onclick="openLiveSupportChat()" style="background-color: #<?=$themeColour?>;padding: 6px 7px;border-color: #f3f6f7;"><i class="far fa-life-ring"></i> Live Tech Support</button></li>
+                                        <li><button class="live-support-open-button btn btn-info" onclick="openLiveSupportChat()" style="background-color: #<?=$themeColour?>;border-color: #f3f6f7;"><i class="far fa-life-ring"></i> Live Tech Support</button></li>
                                     </ul>
 
                                     <ul class="main-menu nav navbar-nav navbar-right">
@@ -467,7 +464,7 @@ else
                                         <ul class="main-menu nav navbar-nav navbar-right" id="nav-sessions">
                                             <li><a href="<?= base_url().'sessions/attend_vip_meet'?>"  class="hoverThemeColour" id="vip-meet-greet">VIP MEET & GREET</a></li>
                                         </ul>
-                                        <ul class="main-menu nav navbar-nav navbar-right" id="nav-home">
+                                        <ul class="main-menu nav navbar-nav navbar-right main-event" id="nav-home">
                                             <li><a href="<?=base_url().'sessions/attend'?>"class="hoverThemeColour">MAIN EVENT</a></li>
                                         </ul>
                                         <ul class="main-menu nav navbar-nav navbar-right" id="nav-home">
@@ -475,7 +472,7 @@ else
                                         </ul>
                                     <?php }?>
                                     <ul class="main-menu nav navbar-nav navbar-left nav-button" >
-                                        <li><a href="https://www.jfssd.org/supportjfs" target="_blank" class="hoverThemeColour"><img  id="button-support" src="<?= base_url()?>front_assets/images/Support_JFS_Button.png" style="max-width: 150px;height: 50px; "></a></li>
+                                        <li><a href="https://www.jfssd.org/supportjfs" target="_blank" class="hoverThemeColour"><img  id="button-support" src="<?= base_url()?>front_assets/images/Support_JFS_Button.png"></a></li>
                                     </ul>
                                 </nav>
                             </div>
