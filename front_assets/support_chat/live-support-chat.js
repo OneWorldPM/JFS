@@ -20,9 +20,11 @@ $(document).ready(function () {
         if (data.status == 1)
         {
             $('.live-support-open-button').show();
+            $('#help-btn-ul').hide();
         }else{
             $('.live-support-open-button').hide();
             $('#liveSupportChatForm').hide();
+            $('#help-btn-ul').show();
         }
     });
 

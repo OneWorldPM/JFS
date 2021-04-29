@@ -447,8 +447,8 @@ else
                                         <li><a href="mailto:victoriap@jfssd.org?subject=Event Support" target="_self" class="hoverThemeColour">JFS INFO</a></li>
                                     </ul>
 
-                                    <ul class="main-menu nav navbar-nav navbar-right">
-                                        <li><a href="https://yourconference.live/support" target="_blank" class="hoverThemeColour">HELP</a></li>
+                                    <ul id="help-btn-ul" class="main-menu nav navbar-nav navbar-right">
+                                        <li><a href="https://yourconference.live/support" target="_blank" class="hoverThemeColour" style="display: <?=(liveSupportChatStatus())?'none':'block'?>;">HELP</a></li>
                                     </ul>
 
                                     <?php  if ($this->session->userdata('cid') != "") {?>
