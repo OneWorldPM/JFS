@@ -24,7 +24,7 @@
 <section class="parallax fullscreen" style="background-image: url(<?= base_url() ?>front_assets/images/attend_background.png); top: 0; padding-top: 0px;">
 <div class="container container-fullscreen">
     <div class="jumbotron">
-        <h2>Content Managed.</h2>
+        <h3>This event is now over. Thank you for attending!</h3>
     </div>
 </div>
 </section>

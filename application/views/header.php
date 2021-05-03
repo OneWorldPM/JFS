@@ -440,7 +440,7 @@ else
                                     <?php }?>
 
                                     <ul class="main-menu nav navbar-nav navbar-right">
-                                        <li><button class="live-support-open-button btn btn-info" onclick="openLiveSupportChat()" style="background-color: #<?=$themeColour?>;border-color: #f3f6f7;display: <?=(liveSupportChatStatus())?'block':'none'?>;"><i class="far fa-life-ring"></i> Live Tech Support</button></li>
+                                        <li><button class="live-support-open-button btn btn-info" onclick="openLiveSupportChat()" style="display: <?=(liveSupportChatStatus())?'block':'none'?>;"><i class="far fa-life-ring"></i> Live Tech Support</button></li>
                                     </ul>
 
                                     <ul class="main-menu nav navbar-nav navbar-right">
